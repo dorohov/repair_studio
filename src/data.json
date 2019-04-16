@@ -7,9 +7,35 @@
         "facebook": "#",
         "instagram": "#"
     },
+    "menu": [
+        {
+            "title": "Ремонт Apple",
+            "url": "@@pages.apple"
+        },
+        {
+            "title": "Ремонт смартфонов",
+            "url": "@@pages.smartphones"
+        },
+        {
+            "title": "Магазин",
+            "url": "@@pages.catalog"
+        },
+        {
+            "title": "Акции",
+            "url": "@@pages.stock"
+        },
+        {
+            "title": "О сервисе",
+            "url": "@@pages.about"
+        },
+        {
+            "title": "Контакты",
+            "url": "@@pages.contacts"
+        }
+    ],
     "pages": {
         "index": "index.html",
-        "iphone": "iphone.html",
+        "apple": "apple.html",
         "smartphones": "smartphones.html",
         "stock": "stock.html",
         "about": "about.html",

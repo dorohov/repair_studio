@@ -10,12 +10,49 @@
 </head>
 
 <body>
-    navbar
+    <header class="navbar is--bg_transparent">
+        <div class="navbar__inner">
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <svg class="svg-logo-dims svg is--logo">
+                        <use xlink:href="img/svg/sprites.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="navbar__menu">
+                <ul>
+
+                    <li><a href="apple.html">Ремонт Apple</a></li>
+
+                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
+
+                    <li><a href="catalog.html">Магазин</a></li>
+
+                    <li><a href="stock.html">Акции</a></li>
+
+                    <li><a href="about.html">О сервисе</a></li>
+
+                    <li><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar__search"></div>
+            <div class="navbar__phone">
+                <a href="tel:84862490606">+7 (4862) 49-06-06</a>
+            </div>
+            <div class="navbar__burger">
+                <button id="mobileMenuBtn" class="is--active">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
     <main>
         main
     </main>
     <footer class="footer"></footer>
-    <!-- scripts -->
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/main.js"></script>
 </body>
 
 </html>

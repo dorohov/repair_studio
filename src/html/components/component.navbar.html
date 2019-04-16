@@ -1,1 +1,25 @@
-navbar
+<header class="navbar is--bg_@@bg">
+    <div class="navbar__inner">
+        <div class="navbar__logo">
+            <a href="@@pages.index">
+                @@include('component.svg.html', {"name": "logo"})
+            </a>
+        </div>
+        <nav class="navbar__menu">
+            <ul>
+                @@for(var i = 0; i < menu.length; i++) {
+                    <li><a href="`+menu[i].url+`">`+menu[i].title+`</a></li>
+                }
+            </ul>
+        </nav>
+        <div class="navbar__search"></div>
+        <div class="navbar__phone">
+            <a href="@@phone_link">@@phone</a>
+        </div>
+        <div class="navbar__burger">
+            <button id="mobileMenuBtn" class="is--active">
+                <span></span>
+            </button>
+        </div>
+    </div>
+</header>
