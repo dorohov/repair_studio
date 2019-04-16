@@ -1,0 +1,20 @@
+{
+    "sitename": "Студия Ремонта",
+    "phone": "+7 (4862) 49-06-06",
+    "phone_link": "tel:84862490606",
+    "social": {
+        "vk": "#",
+        "facebook": "#",
+        "instagram": "#"
+    },
+    "pages": {
+        "index": "index.html",
+        "iphone": "iphone.html",
+        "smartphones": "smartphones.html",
+        "stock": "stock.html",
+        "about": "about.html",
+        "contacts": "contacts.html",
+        "catalog": "catalog.html",
+        "reviews": "reviews.html"
+    }
+}

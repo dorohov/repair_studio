@@ -1,0 +1,9 @@
+$container_padding: 30px;
+
+%container {
+    max-width: $grid_width + ($container_padding * 2);
+    padding-left: $container_padding;
+    padding-right: $container_padding;
+    width: 100%;
+    margin: 0 auto;
+}

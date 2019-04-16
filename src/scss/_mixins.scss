@@ -1,0 +1,7 @@
+@mixin pinkGradient() {
+    background: linear-gradient(157.14deg, #F06864 3.01%, #DD5A95 84.67%), #F2F2F2;
+}
+
+@mixin blueGradint() {
+    background: linear-gradient(139.86deg, #2972C6 0%, #1289E0 90.79%), #2972C6;
+}
