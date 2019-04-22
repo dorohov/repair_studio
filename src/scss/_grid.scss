@@ -7,3 +7,54 @@ $container_padding: 30px;
     width: 100%;
     margin: 0 auto;
 }
+
+.slide {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.heading {
+    &.is--white {
+        color: #fff;
+    }
+    &.is--dark {
+        color: $dark;
+    }
+    &.is--block {
+        text-align: center;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 50px;
+        margin-bottom: 60px;
+        &.is--subheading {
+            span {
+                display: block;
+                font-size: 18px;
+                line-height: 19px;
+                font-weight: 300;
+                padding-top: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .heading {
+        &.is--block {
+            font-size: 26px;
+            line-height: 28px;
+            margin-bottom: 35px;
+            &.is--subheading {
+                span {
+                    font-size: 16px;
+                    line-height: 16px;
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+    .slide {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+}

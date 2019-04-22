@@ -1,0 +1,26 @@
+.btn {
+    display: inline-block;
+    background: $blue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    padding: 20px 45px;
+    border-radius: 5px;
+    transition: .25s all ease;
+    &:hover {
+        text-decoration: none;
+        background: #207BD0;
+    }
+}
+
+@media (max-width: $resp768) {
+    .btn {
+        padding: 15px 25px;
+        font-size: 12px;
+    }
+}

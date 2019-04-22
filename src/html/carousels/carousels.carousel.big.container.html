@@ -1,0 +1,26 @@
+<div class="carousel__big">
+    <div class="carousel__big__inner slide">
+        <div class="carousel__big__heading">
+            <div class="heading is--block is--dark">@@title</div>
+        </div>
+        <div class="carousel__big__items">
+            <div class="carousel__big__items__wrap">
+                    @@for(var i = 0; i < items.length; i++) {
+                        <div class="carousel__big__item">
+                            @@include('carousels.carousel.big.card.html', {
+                                "type": "@@type",
+                                "link": "@@link",
+                                "link_text": "@@link_text",
+                                "title": "`+items[i].title+`",
+                                "img": "`+items[i].img+`"
+                            })
+                        </div>
+                    }
+            </div>
+            <div class="carousel__big__controls">
+                <button class="is--prev">@@include('../components/component.svg.html', {"name": "carousel_arrow"})</button>
+                <button class="is--next">@@include('../components/component.svg.html', {"name": "carousel_arrow"})</button>
+            </div>
+        </div>
+    </div>
+</div>

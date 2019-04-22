@@ -1,0 +1,279 @@
+.carousel__big {
+    @extend %container;
+    max-width: 1800px;
+    padding-left: 90px;
+    padding-right: 90px;
+    &__items {
+        margin: 0 -15px;
+        position: relative;
+    }
+    &__card {
+        padding: 0 15px;
+        * {
+            outline: none;
+        }
+        &__inner {
+            background: $grey;
+        }
+        &__title {
+            color: $dark;
+            text-align: center;
+        }
+        &__link {
+            span {
+                color: $blue;
+                position: relative;
+                &::after {
+                    content: url(../../img/svg/blue_arrow.svg);
+                    margin-left: 5px;
+                }
+            }
+        }
+        &__img {
+            transition: .5s all ease;
+        }
+        &__wrap {
+            display: block;
+        }
+        &__inner {
+            overflow: hidden;
+            &:hover {
+                text-decoration: none;
+                .carousel__big {
+                    &__card {
+                        &__wrap {
+                            text-decoration: none;
+                        }
+                        &__link {
+                            span {
+                                text-decoration: underline;
+                            }
+                        }
+                        &__img {
+                            transform: scale(1.06);
+                        }
+                    }
+                }
+            }
+        }
+        &.is--phones {
+            .carousel__big {
+                &__card {
+                    &__wrap {
+                        padding-top: 90px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                    }
+                    &__title {
+                        font-weight: 500;
+                        font-size: 36px;
+                        line-height: 37px;
+                        margin-bottom: 30px;
+                        color: $dark;
+                    }
+                    &__link {
+                        text-align: center;
+                        margin-bottom: 80px;
+                    }
+                    &__img {
+                        max-width: 310px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        &.is--all {
+            .carousel__big {
+                &__card {
+                    &__inner {
+                        min-height: 455px;
+                    }
+                    &__wrap {
+                        padding-top: 70px;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        margin-bottom: 65px;
+                    }
+                    &__title {
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 25px;
+                        margin-bottom: 30px;
+                        color: $dark;
+                    }
+                    &__link {
+                        text-align: center;
+                        margin-bottom: 80px;
+                    }
+                    &__img {
+                        max-width: 250px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+    &__controls {
+        button {
+            position: absolute;
+            top: 50%;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+            margin-top: -10px;
+            &.is--prev {
+                left: -50px;
+            }
+            &.is--next {
+                right: -50px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.carousel__small {
+    @extend %container;
+    max-width: 1800px;
+    padding-left: 90px;
+    padding-right: 90px;
+    &__items {
+        margin: 0 -15px;
+        position: relative;
+        padding-top: 30px;
+    }
+    &__card {
+        padding: 0 15px;
+        text-align: center;
+        &__inner {
+            &:hover {
+                .carousel__small {
+                    &__card {
+                        &__name {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+        * {
+            outline: none;
+        }
+        &__img {
+            text-align: center;
+            margin-bottom: 40px;
+            img {
+                height: 135px;
+                width: auto;
+                margin: 0 auto;
+                transition: .25s all ease;
+            }
+        }
+        &__name {
+            color: $dark;
+            transition: .25s all ease;
+        }
+    }
+    &__controls {
+        button {
+            position: absolute;
+            top: 50%;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            outline: none;
+            margin-top: -10px;
+            &.is--prev {
+                left: -50px;
+            }
+            &.is--next {
+                right: -50px;
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.slick-slide {
+    outline: none;
+}
+
+@media (max-width: $resp1200) {
+    .carousel {
+        &__big {
+            &__card {
+                &.is--phones {
+                    .carousel {
+                        &__big {
+                            &__card {
+                                &__inner {
+                                    padding-top: 40px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                }
+                                &__title {
+                                    font-size: 26px;
+                                    line-height: 28px;
+                                    margin-bottom: 10px;
+                                }
+                                &__link {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .carousel {
+        &__big {
+            padding-left: 30px;
+            padding-right: 30px;
+            &__controls {
+                display: none;
+            }
+            &__card {
+                &.is--phones {
+                    .carousel {
+                        &__big {
+                            &__card {
+                                &__wrap {
+                                    padding-top: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.is--all {
+                    .carousel {
+                        &__big {
+                            &__card {
+                                &__inner {
+                                    min-height: 0;
+                                }
+                                &__wrap {
+                                    padding: 30px 20px 15px 20px;
+                                }
+                                &__inner {
+                                    padding-top: 40px;
+                                    padding-left: 30px;
+                                    padding-right: 30px;
+                                }
+                                &__link {
+                                    margin-bottom: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

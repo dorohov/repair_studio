@@ -22,3 +22,38 @@ a {
         text-decoration: underline;
     }
 }
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+.anim {
+    opacity: 0;
+    &.animated {
+        opacity: 1;
+    }
+    &.delay--s25 {
+        animation-duration: 2.5s;
+    }
+}
+
+#overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10000000;
+    background: rgba(#000, .5);
+    display: none;
+    cursor: pointer;
+    &.is--active {
+        display: block;
+    }
+}

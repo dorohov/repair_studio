@@ -1,0 +1,202 @@
+.slider {
+    position: relative;
+    &__item {
+        display: none;
+        &.is--active {
+            display: block;
+        }
+    }
+    &__lines {
+        position: absolute;
+        @extend %container;
+        bottom: 65px;
+        z-index: 999;
+        left: 0;
+        right: 0;
+        ul {
+            display: flex;
+            margin: 0 -12px;
+            li {
+                margin: 0 12px;
+                padding: 5px 0;
+                cursor: pointer;
+                span {
+                    position: relative;
+                    height: 2px;
+                    background: #464646;
+                    width: 65px;
+                    display: block;
+                    div {
+                        height: 100%;
+                        background: #fff;
+                        width: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    &__inner {
+        @extend %container;
+        position: relative;
+        z-index: 100;
+        padding-top: 100px;
+        display: flex;
+        margin-top: auto;
+        padding-top: 140px;
+        min-height: 100vh;
+        &__left {
+            max-width: 650px;
+            padding-bottom: 50px;
+            padding-top: 100px;
+            position: relative;
+            z-index: 100;
+        }
+        &__right {
+            animation-duration: 2.5s;
+            position: relative;
+            z-index: 90;
+            img {
+                user-drag: none; 
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-drag: none;
+                -webkit-user-select: none;
+                -ms-user-select: none;
+            }
+            &.is--bannerCarouselOne {
+                display: flex;
+                align-items: flex-end;
+                img {
+                    width: auto;
+                }
+            }
+            &.is--bannerCarouselTwo {
+                display: flex;
+                align-items: flex-end;
+                img {
+                    width: auto;
+                    transform: scale(1.5) translateX(-10%);
+                }
+            }
+            img {
+                transition: .5s all ease;
+            }
+        }
+        &__title,
+        &__desc {
+            color: #fff;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 72px;
+            line-height: 75px;
+            margin-bottom: 40px;
+            white-space: nowrap;
+        }
+        &__desc {
+            font-size: 16px;
+            margin-bottom: 70px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+    &__bg {
+        background: $black;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 50;
+        top: 0;
+        left: 0;
+        display: flex;
+        &__right {
+            height: 100%;
+            width: 42%;
+            background: $dark;
+            margin-left: auto;
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            &::after {
+                content: '';
+                background: url(../../img/bigLogo.svg);
+                max-width: 600px;
+                width: 100%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center bottom;
+                height: 100%;
+                opacity: .02;
+                margin: 0 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .banner {
+        &__inner {
+            &__right {
+                max-width: 500px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .banner {
+        &__inner {
+            padding-top: 70px;
+            &__left {
+                padding-top: 50px;
+                min-width: 400px;
+            }
+            &__title {
+                font-size: 42px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .slider {
+        &__lines {
+            display: none;
+        }
+    }
+    .banner {
+        &__inner {
+            flex-wrap: wrap;
+            &__left {
+                max-width: 100%;
+                min-width: 0;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            &__title {
+                font-size: 30px;
+                line-height: 32px;
+                margin-bottom: 20px;
+            }
+            &__desc {
+                font-size: 14px;
+                line-height: 18px;
+                margin-bottom: 20px;
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @import "../../img/svg/sprite.scss";
+@import "slick";
 @import "vars";
 @import "normalize";
 @import "animate";
@@ -11,3 +12,7 @@
 @import "mixins";
 @import "navbar";
 @import "components";
+@import "banner";
+@import "carousels";
+@import "pr";
+@import "blocks";

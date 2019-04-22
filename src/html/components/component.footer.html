@@ -1,2 +1,89 @@
-<footer class="footer"></footer>
+<footer class="footer">
+    <div class="footer__top">
+        <div class="footer__top__inner">
+            <div class="footer__top__wrap">
+                <div class="footer__top__block is--menu">
+                    <div class="footer__top__block__heading">Apple</div>
+                    <nav class="footer__top__block__menu">
+                        <ul>
+                            <li><a href="@@pages.apple">iPhone</a></li>
+                            <li><a href="@@pages.apple">iMac</a></li>
+                            <li><a href="@@pages.apple">iPad</a></li>
+                            <li><a href="@@pages.apple">iPod</a></li>
+                            <li><a href="@@pages.apple">iWatch</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__top__block is--menu">
+                    <div class="footer__top__block__heading">Другая техника</div>
+                    <nav class="footer__top__block__menu">
+                        <ul>
+                            <li><a href="@@pages.smartphones">Samsung</a></li>
+                            <li><a href="@@pages.smartphones">Huawei</a></li>
+                            <li><a href="@@pages.smartphones">Meizu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__top__block is--menu">
+                    <div class="footer__top__block__heading">О компании</div>
+                    <nav class="footer__top__block__menu">
+                        <ul>
+                            <li><a href="#">Акциии</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__top__block is--contacts">
+                    <div class="footer__top__block__heading">Салоны в Орле</div>
+                    <nav class="footer__top__block__menu">
+                        <ul>
+                            <li><span>302030, г. Орел</span></li>
+                            <li><span>ул. Московская, 21</span></li>
+                            <li><a href="@@phone_link">+7 (4862) 49-06-06</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__top__block is--bottom">
+                    <div class="footer__top__block__heading">Мы в социальных сетях:</div>
+                    <div class="footer__top__block__social">
+                        <ul>
+                            <li><a href="#">@@include('component.svg.html', {"name": "fb"})</a></li>
+                            <li><a href="#">@@include('component.svg.html', {"name": "inst"})</a></li>
+                            <li><a href="#">@@include('component.svg.html', {"name": "vk"})</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__top__block is--bottom">
+                    <div class="footer__top__block__heading">Принимаем:</div>
+                    <div class="footer__top__block__payment">
+                        <ul>
+                            <li>@@include('component.svg.html', {"name": "visa"})</li>
+                            <li>@@include('component.svg.html', {"name": "mastercard"})</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <div class="footer__bottom__inner">
+            <div class="footer__bottom__cop"><span>2009—2019</span> Сервисный центр AppleService</div>
+            <nav class="footer__bottom__menu">
+                <ul>
+                    <li><a href="@@pages.simple">Политика конфиденциальности</a></li>
+                    <li><a href="@@pages.simple">Юридическая информация</a></li>
+                </ul>
+            </nav>
+            <div class="footer__bottom__dorohov">
+                <a href="https://dorohovdesign.ru/" class="footer__bottom__dorohov__block" target="_blank">
+                    <div class="footer__bottom__dorohov__block__text">Дизайн и разработка — </div>
+                    <div class="footer__bottom__dorohov__block__logo">@@include('component.svg.html', {"name": "dorohov"})</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="overlay"></div>
 @@include('component.scripts.html')

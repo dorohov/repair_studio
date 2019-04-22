@@ -6,20 +6,49 @@
             </a>
         </div>
         <nav class="navbar__menu">
+            <!-- На ссылку можно повесить класс "is--active" -->
             <ul>
                 @@for(var i = 0; i < menu.length; i++) {
                     <li><a href="`+menu[i].url+`">`+menu[i].title+`</a></li>
                 }
             </ul>
         </nav>
-        <div class="navbar__search"></div>
+        <div class="navbar__search">
+            <form class="navbar__search__inner">
+                <div class="navbar__search__btn">
+                    <button type="button" id="#searchMenuBtn">
+                        @@include('component.svg.html', {"name": "search"})
+                    </button>
+                </div>
+                <div class="navbar__search__field">
+                    <input type="text">
+                </div>
+            </form>
+        </div>
         <div class="navbar__phone">
             <a href="@@phone_link">@@phone</a>
         </div>
         <div class="navbar__burger">
-            <button id="mobileMenuBtn" class="is--active">
+            <button id="mobileMenuBtn">
                 <span></span>
             </button>
         </div>
+    </div>
+    <div class="navbar__mobcontainer">
+        <div class="navbar__mobcontainer__search">
+            <form class="navbar__mobcontainer__search__field">
+                <button>@@include('component.svg.html', {"name": "search"})</button>
+                <input type="text">
+            </form>
+        </div>
+        <nav class="navbar__mobcontainer__menu">
+            <!-- На ссылку можно повесить класс "is--active" -->
+            <ul>
+                @@for(var i = 0; i < menu.length; i++) {
+                    <li><a href="`+menu[i].url+`">`+menu[i].title+`</a></li>
+                }
+            </ul>
+        </nav>
+        <div class="navbar__mobcontainer__phone"><a href="@@phone_link">@@phone</a></div>
     </div>
 </header>

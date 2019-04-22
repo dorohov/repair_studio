@@ -20,6 +20,7 @@
                 </a>
             </div>
             <nav class="navbar__menu">
+                <!-- На ссылку можно повесить класс "is--active" -->
                 <ul>
 
                     <li><a href="apple.html">Ремонт Apple</a></li>
@@ -36,22 +37,561 @@
 
                 </ul>
             </nav>
-            <div class="navbar__search"></div>
+            <div class="navbar__search">
+                <form class="navbar__search__inner">
+                    <div class="navbar__search__btn">
+                        <button type="button" id="#searchMenuBtn">
+                            <svg class="svg-search-dims svg is--search">
+                                <use xlink:href="img/svg/sprites.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="navbar__search__field">
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
             <div class="navbar__phone">
                 <a href="tel:84862490606">+7 (4862) 49-06-06</a>
             </div>
             <div class="navbar__burger">
-                <button id="mobileMenuBtn" class="is--active">
+                <button id="mobileMenuBtn">
                     <span></span>
                 </button>
             </div>
         </div>
+        <div class="navbar__mobcontainer">
+            <div class="navbar__mobcontainer__search">
+                <form class="navbar__mobcontainer__search__field">
+                    <button><svg class="svg-search-dims svg is--search">
+                            <use xlink:href="img/svg/sprites.svg#search"></use>
+                        </svg></button>
+                    <input type="text">
+                </form>
+            </div>
+            <nav class="navbar__mobcontainer__menu">
+                <!-- На ссылку можно повесить класс "is--active" -->
+                <ul>
+
+                    <li><a href="apple.html">Ремонт Apple</a></li>
+
+                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
+
+                    <li><a href="catalog.html">Магазин</a></li>
+
+                    <li><a href="stock.html">Акции</a></li>
+
+                    <li><a href="about.html">О сервисе</a></li>
+
+                    <li><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar__mobcontainer__phone"><a href="tel:84862490606">+7 (4862) 49-06-06</a></div>
+        </div>
     </header>
     <main>
-        main
+        <div class="slider">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="banner__inner__left">
+                                <div class="banner__inner__title">Ремонт Apple <br> и другой техники</div>
+                                <div class="banner__inner__desc">Выполняем аппаратный ремонт любой сложности. <br> Для этого у нас есть все необходимое оборудование, <br> качественные запчасти и специалисты, прошедшие <br> обучение в центрах по ремонту техники.</div>
+                                <div class="banner__inner__btn">
+                                    <a href="#" class="btn">Узнать цены</a>
+                                </div>
+                            </div>
+                            <div class="banner__inner__right animated fadeInUp is--bannerCarouselOne"><img src="img/bannerCarouselOneImg.png"></div>
+                        </div>
+                        <div class="banner__bg">
+                            <div class="banner__bg__right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="banner__inner__left">
+                                <div class="banner__inner__title">Ремонт Apple <br> и другой техники2</div>
+                                <div class="banner__inner__desc">Выполняем аппаратный ремонт любой сложности. <br> Для этого у нас есть все необходимое оборудование, <br> качественные запчасти и специалисты, прошедшие <br> обучение в центрах по ремонту техники.</div>
+                                <div class="banner__inner__btn">
+                                    <a href="#" class="btn">Узнать цены</a>
+                                </div>
+                            </div>
+                            <div class="banner__inner__right animated fadeInUp is--bannerCarouselOne"><img src="img/bannerCarouselOneImg.png"></div>
+                        </div>
+                        <div class="banner__bg">
+                            <div class="banner__bg__right"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <div class="banner">
+                        <div class="banner__inner">
+                            <div class="banner__inner__left">
+                                <div class="banner__inner__title">Ремонт Apple <br> и другой техники3</div>
+                                <div class="banner__inner__desc">Выполняем аппаратный ремонт любой сложности. <br> Для этого у нас есть все необходимое оборудование, <br> качественные запчасти и специалисты, прошедшие <br> обучение в центрах по ремонту техники.</div>
+                                <div class="banner__inner__btn">
+                                    <a href="#" class="btn">Узнать цены</a>
+                                </div>
+                            </div>
+                            <div class="banner__inner__right animated fadeInUp is--bannerCarouselOne"><img src="img/bannerCarouselOneImg.png"></div>
+                        </div>
+                        <div class="banner__bg">
+                            <div class="banner__bg__right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__lines">
+                <ul>
+                </ul>
+            </div>
+        </div>
+        <div class="carousel__big">
+            <div class="carousel__big__inner slide">
+                <div class="carousel__big__heading">
+                    <div class="heading is--block is--dark">Выберите продукт</div>
+                </div>
+                <div class="carousel__big__items">
+                    <div class="carousel__big__items__wrap">
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--phones">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">iPhone</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Увидеть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_iphone.png" alt="iPhone" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--phones">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Samsung</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Увидеть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_samsung.png" alt="Samsung" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--phones">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Huawei</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Увидеть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_huawei.png" alt="Huawei" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--phones">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">iPhone</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Увидеть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_iphone.png" alt="iPhone" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--phones">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Samsung</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Увидеть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_samsung.png" alt="Samsung" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--phones">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Huawei</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Увидеть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_huawei.png" alt="Huawei" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__big__controls">
+                        <button class="is--prev"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                        <button class="is--next"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__inner slide">
+                <div class="heading is--block is--white is--subheading">Опишите свою проблему <span>В течение 5 минут с Вами свяжется специалист</span></div>
+                <div class="form__wrap">
+                    <div class="form__wrap__inner">
+                        <div class="form__group is--w50">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Имя</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w50">
+                            <input type="text" id="phone" name="phone" required>
+                            <label for="phone">Телефон</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w100">
+                            <input type="text" id="desc" name="desc" required>
+                            <label for="desc">Описание проблемы</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w100 is--submit">
+                            <div class="form__group__submit">
+                                <div class="form__group__submit__btn">
+                                    <input type="submit" class="btn" value="Отправить">
+                                </div>
+                                <div class="form__group__submit__text">
+                                    Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="#">обработки персональных данных</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pr is--index-memory">
+            <div class="pr__title">
+                <div class="pr__title__text">Увеличиваем память на телефоне</div>
+                <div class="pr__title__subtext">В нашем сервисном центре вы сможете увеличить память на вашем устройстве и навсегда забыть об <br> уведомлении «Память iPhone/iPad заполнена». Мы обладаем специализированным оборудованием, а наши <br> инженеры квалификацией, позволяющей выполнять такой уникальный вид работ</div>
+            </div>
+            <div class="pr__btn">
+                <a href="apple.html#price" class="btn">Посмотреть прайс</a>
+            </div>
+            <div class="pr__img">
+                <img class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25" src="img/index_memory.png" alt="">
+            </div>
+        </div>
+        <div class="index--services">
+            <div class="index--services__inner">
+                <div class="index--services__blocks">
+                    <div class="index--services__block">
+                        <div class="index--services__block__inner">
+                            <div class="index--services__block__title">Ремонт Apple и другой <br> техники в Орле</div>
+                            <div class="index--services__block__subtitle">Мастер по ремонту приедет с необходимым оборудованием <br> и проведёт диагностику и ремонт Вашего устройства на месте.</div>
+                            <div class="index--services__block__links">
+                                <a href="#">Записаться на диагностику</a>
+                                <a href="#">Вызвать курьера</a>
+                            </div>
+                            <div class="index--services__block__img is--one">
+                                <img src="img/is1.png" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="index--services__block">
+                        <div class="index--services__block__inner">
+                            <div class="index--services__block__title">Ремонт смартфонов <br> в Орле</div>
+                            <div class="index--services__block__subtitle">Наши инженеры проведут качественную диагностику и расскажут <br> всё о Вашей проблеме, а Вы примете решение о ремонте.</div>
+                            <div class="index--services__block__links">
+                                <a href="#">Записаться на диагностику</a>
+                                <a href="#">Вызвать курьера</a>
+                            </div>
+                            <div class="index--services__block__img is--two">
+                                <img src="img/is2.png" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel__big">
+            <div class="carousel__big__inner slide">
+                <div class="carousel__big__heading">
+                    <div class="heading is--block is--dark">Мы можем починить также</div>
+                </div>
+                <div class="carousel__big__items">
+                    <div class="carousel__big__items__wrap">
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Ноутбуки</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_notebooks.png" alt="Ноутбуки" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Планшеты</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_tablets.png" alt="Планшеты" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Телефоны</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_phones.png" alt="Телефоны" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Ноутбуки</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_notebooks.png" alt="Ноутбуки" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Планшеты</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_tablets.png" alt="Планшеты" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Телефоны</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_phones.png" alt="Телефоны" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__big__controls">
+                        <button class="is--prev"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                        <button class="is--next"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__inner slide">
+                <div class="heading is--block is--white is--subheading">Получить бесплатную консультацию или выезд на дом <span>В течение 5 минут с Вами свяжется специалист</span></div>
+                <div class="form__wrap">
+                    <div class="form__wrap__inner">
+                        <div class="form__group is--w50">
+                            <input type="text" id="fname" name="fname" required>
+                            <label for="fname">Имя</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w50">
+                            <input type="text" id="fphone" name="fphone" required>
+                            <label for="fphone">Телефон</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w100 is--submit">
+                            <div class="form__group__submit">
+                                <div class="form__group__submit__btn">
+                                    <input type="submit" class="btn" value="Отправить">
+                                </div>
+                                <div class="form__group__submit__text">
+                                    Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="#">обработки персональных данных</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top__inner">
+                <div class="footer__top__wrap">
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">Apple</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="apple.html">iPhone</a></li>
+                                <li><a href="apple.html">iMac</a></li>
+                                <li><a href="apple.html">iPad</a></li>
+                                <li><a href="apple.html">iPod</a></li>
+                                <li><a href="apple.html">iWatch</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">Другая техника</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="smartphones.html">Samsung</a></li>
+                                <li><a href="smartphones.html">Huawei</a></li>
+                                <li><a href="smartphones.html">Meizu</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">О компании</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="#">Акциии</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--contacts">
+                        <div class="footer__top__block__heading">Салоны в Орле</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><span>302030, г. Орел</span></li>
+                                <li><span>ул. Московская, 21</span></li>
+                                <li><a href="tel:84862490606">+7 (4862) 49-06-06</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--bottom">
+                        <div class="footer__top__block__heading">Мы в социальных сетях:</div>
+                        <div class="footer__top__block__social">
+                            <ul>
+                                <li><a href="#"><svg class="svg-fb-dims svg is--fb">
+                                            <use xlink:href="img/svg/sprites.svg#fb"></use>
+                                        </svg></a></li>
+                                <li><a href="#"><svg class="svg-inst-dims svg is--inst">
+                                            <use xlink:href="img/svg/sprites.svg#inst"></use>
+                                        </svg></a></li>
+                                <li><a href="#"><svg class="svg-vk-dims svg is--vk">
+                                            <use xlink:href="img/svg/sprites.svg#vk"></use>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__top__block is--bottom">
+                        <div class="footer__top__block__heading">Принимаем:</div>
+                        <div class="footer__top__block__payment">
+                            <ul>
+                                <li><svg class="svg-visa-dims svg is--visa">
+                                        <use xlink:href="img/svg/sprites.svg#visa"></use>
+                                    </svg></li>
+                                <li><svg class="svg-mastercard-dims svg is--mastercard">
+                                        <use xlink:href="img/svg/sprites.svg#mastercard"></use>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom__inner">
+                <div class="footer__bottom__cop"><span>2009—2019</span> Сервисный центр AppleService</div>
+                <nav class="footer__bottom__menu">
+                    <ul>
+                        <li><a href="simple.html">Политика конфиденциальности</a></li>
+                        <li><a href="simple.html">Юридическая информация</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__bottom__dorohov">
+                    <a href="https://dorohovdesign.ru/" class="footer__bottom__dorohov__block" target="_blank">
+                        <div class="footer__bottom__dorohov__block__text">Дизайн и разработка — </div>
+                        <div class="footer__bottom__dorohov__block__logo"><svg class="svg-dorohov-dims svg is--dorohov">
+                                <use xlink:href="img/svg/sprites.svg#dorohov"></use>
+                            </svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
     <script src="dist/js/main.js"></script>
 </body>
 
