@@ -1,0 +1,37 @@
+.about {
+    &-banner {
+        &.is--black {
+            background: $black;
+            color: #fff;
+        }
+        &.is--grey {
+            background: $grey;
+            color: $dark;
+        }
+        &.is--white {
+            color: $dark;
+        }
+        &__inner {
+            @extend %container;
+            padding-top: 155px;
+            padding-bottom: 190px;
+        }
+        &__wrap {
+            
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 50px;
+            margin-bottom: 30px;
+            max-width: 690px;
+            width: 100%;
+        }
+        &__desc {
+            font-weight: normal;
+            font-size: 16px;
+            max-width: 690px;
+            width: 100%;
+        }
+    }
+}

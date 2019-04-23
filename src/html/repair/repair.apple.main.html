@@ -6,7 +6,8 @@
     "btn_text": "Заказать ремонт",
     "image": "bannerCarouselTwoImg.png",
     "animation_name": "fadeInRight",
-    "animation_delay": "s25"
+    "animation_delay": "s25",
+    "table": "false"
 })
 @@include('../carousels/carousels.carousel.small.phones.html', {
     "title": "Выберите продукт",
@@ -64,10 +65,15 @@
         }
     ]
 })
-@@include('repair.apple.banner.iphonex.html')
+@@include('repair.apple.banner.phone.html', {
+    "id": "iphonex",
+    "img": "banner_iphonex.png",
+    "title": "iPhone X",
+    "desc": "Приезжайте в наш центр, звоните или отправьте онлайн-заявку. <br> В любом случае вы получите профессиональное решение любой <br> проблемы при минимальных затратах времени и денежных средств."
+})
 @@include('../form/form.main.html')
-<!-- Icons -->
-<!-- Price -->
+@@include('repair.block.icons.html')
+@@include('repair.block.price.html')
 @@include('../carousels/carousels.carousel.big.container.html', {
     "title": "Мы можем починить также",
     "link": "#",

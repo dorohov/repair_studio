@@ -86,6 +86,22 @@
                     transform: scale(1.5) translateX(-10%);
                 }
             }
+            &.is--bannerCarouselThree {
+                display: flex;
+                align-items: flex-end;
+                img {
+                    width: auto;
+                    transform: translateX(-7%);
+                }
+            }
+            &.is--bannerCarouselAbout {
+                display: flex;
+                align-items: flex-end;
+                img {
+                    width: auto;
+                    transform: translateX(7%);
+                }
+            }
             img {
                 transition: .5s all ease;
             }
@@ -106,6 +122,35 @@
             margin-bottom: 70px;
             font-weight: 300;
             line-height: 22px;
+        }
+        &__info {
+            overflow: hidden;
+            padding-top: 90px;
+            &__wrap {
+                margin: 0 -15px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            &__block {
+                padding: 0 15px;
+                max-width: 50%;
+                width: 100%;
+                margin-bottom: 45px;
+                &__inner {
+                    max-width: 194px;
+                }
+                &__icon {
+                    margin-bottom: 15px;
+                    svg {
+                        fill: $blue;
+                    }
+                }
+                &__text {
+                    color: #fff;
+                    font-weight: 300;
+                    font-size: 16px;
+                }
+            }
         }
     }
     &__bg {
@@ -148,6 +193,9 @@
             &__right {
                 max-width: 500px;
                 margin-left: auto;
+            }
+            &__left {
+                padding-top: 0;
             }
         }
     }

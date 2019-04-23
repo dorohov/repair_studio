@@ -41,6 +41,12 @@ img {
     &.delay--s25 {
         animation-duration: 2.5s;
     }
+    &.delay--s10 {
+        animation-duration: 1s;
+    }
+    &.delay--s15 {
+        animation-duration: 1.5s;
+    }
 }
 
 #overlay {

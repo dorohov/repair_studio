@@ -13,6 +13,10 @@ $container_padding: 30px;
     padding-bottom: 70px;
 }
 
+.page {
+    padding-top: 100px;
+}
+
 .heading {
     &.is--white {
         color: #fff;
@@ -35,6 +39,19 @@ $container_padding: 30px;
                 padding-top: 25px;
             }
         }
+    }
+}
+
+.link {
+    &::after {
+        content: url(../../img/svg/blue_arrow.svg);
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: $resp1200) {
+    .page {
+        padding-top: 70px;
     }
 }
 

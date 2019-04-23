@@ -1,0 +1,14 @@
+<tbody id="is-@@id" class="__price-tab @@if(active == 'true') {is--active}">
+    @@for(var i = 0; i < price.length; i++) {
+        <tr data-title="`+price[i].name+`">
+            <td>`+price[i].name+`</td>
+            <td data-title="Время:">`+price[i].time+`</td>
+            <td data-title="Цена:">`+price[i].price+`</td>
+        </tr>
+    }
+    <tr>
+        <td>this is @@id</td>
+        <td data-title="Время:">@@id</td>
+        <td data-title="Цена:">@@id</td>
+    </tr>
+</tbody>

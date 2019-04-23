@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ремонт смартфонов — Студия Ремонта</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <header class="navbar is--bg_transparent">
+        <div class="navbar__inner">
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <svg class="svg-logo-dims svg is--logo">
+                        <use xlink:href="img/svg/sprites.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="navbar__menu">
+                <!-- На ссылку можно повесить класс "is--active" -->
+                <ul>
+
+                    <li><a href="apple.html">Ремонт Apple</a></li>
+
+                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
+
+                    <li><a href="catalog.html">Магазин</a></li>
+
+                    <li><a href="stock.html">Акции</a></li>
+
+                    <li><a href="about.html">О сервисе</a></li>
+
+                    <li><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar__search">
+                <form class="navbar__search__inner">
+                    <div class="navbar__search__btn">
+                        <button type="button" id="#searchMenuBtn">
+                            <svg class="svg-search-dims svg is--search">
+                                <use xlink:href="img/svg/sprites.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="navbar__search__field">
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+            <div class="navbar__phone">
+                <a href="tel:84862490606">+7 (4862) 49-06-06</a>
+            </div>
+            <div class="navbar__burger">
+                <button id="mobileMenuBtn">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="navbar__mobcontainer">
+            <div class="navbar__mobcontainer__search">
+                <form class="navbar__mobcontainer__search__field">
+                    <button><svg class="svg-search-dims svg is--search">
+                            <use xlink:href="img/svg/sprites.svg#search"></use>
+                        </svg></button>
+                    <input type="text">
+                </form>
+            </div>
+            <nav class="navbar__mobcontainer__menu">
+                <!-- На ссылку можно повесить класс "is--active" -->
+                <ul>
+
+                    <li><a href="apple.html">Ремонт Apple</a></li>
+
+                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
+
+                    <li><a href="catalog.html">Магазин</a></li>
+
+                    <li><a href="stock.html">Акции</a></li>
+
+                    <li><a href="about.html">О сервисе</a></li>
+
+                    <li><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar__mobcontainer__phone"><a href="tel:84862490606">+7 (4862) 49-06-06</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="banner">
+            <div class="banner__inner">
+                <div class="banner__inner__left">
+                    <div class="banner__inner__title">Ремонт смартфонов <br> в Орле</div>
+                    <div class="banner__inner__desc">Наша компания не просто предлагает ремонт смартфонов, <br> но и гарантирует качество выполненных работ.</div>
+                    <div class="banner__inner__btn">
+                        <a href="#" class="btn">Заказать ремонт</a>
+                    </div>
+
+                </div>
+                <div class="banner__inner__right animated fadeInRight is--bannerCarouselThree"><img src="img/bannerCarouselThreeImg.png"></div>
+            </div>
+            <div class="banner__bg">
+                <div class="banner__bg__right"></div>
+            </div>
+        </div>
+        <div class="carousel__small">
+            <div class="carousel__small__inner slide">
+                <div class="carousel__small__heading">
+                    <div class="heading is--block is--dark">Выберите продукт</div>
+                </div>
+                <div class="carousel__small__items">
+                    <div class="carousel__small__items__wrap">
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_samsung.png" alt=""></div>
+                                <div class="carousel__small__card__name">Samsung</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_nokia.png" alt=""></div>
+                                <div class="carousel__small__card__name">Nokia</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_xiaomi.png" alt=""></div>
+                                <div class="carousel__small__card__name">Xiaomi</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_htc.png" alt=""></div>
+                                <div class="carousel__small__card__name">HTC</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_honor.png" alt=""></div>
+                                <div class="carousel__small__card__name">Honor</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_huawei.png" alt=""></div>
+                                <div class="carousel__small__card__name">Huawei</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_samsung.png" alt=""></div>
+                                <div class="carousel__small__card__name">Samsung</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_nokia.png" alt=""></div>
+                                <div class="carousel__small__card__name">Nokia</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_xiaomi.png" alt=""></div>
+                                <div class="carousel__small__card__name">Xiaomi</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_htc.png" alt=""></div>
+                                <div class="carousel__small__card__name">HTC</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_honor.png" alt=""></div>
+                                <div class="carousel__small__card__name">Honor</div>
+                            </a>
+                        </div>
+
+                        <div class="carousel__small__card">
+                            <a href="#" class="carousel__small__card__inner">
+                                <div class="carousel__small__card__img"><img src="img/с_huawei.png" alt=""></div>
+                                <div class="carousel__small__card__name">Huawei</div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="carousel__small__controls">
+                        <button class="is--prev"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                        <button class="is--next"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pr is--banner-phone is--galaxys10">
+            <div class="pr__inner">
+                <div class="pr__left">
+                    <img src="img/banner_galaxys10.png" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                </div>
+                <div class="pr__right">
+                    <div class="pr__title">Samsung Galaxy S10</div>
+                    <div class="pr__desc">
+                        Приезжайте в наш центр, звоните или отправьте онлайн-заявку. <br> В любом случае вы получите профессиональное решение любой <br> проблемы при минимальных затратах времени и денежных средств.
+                    </div>
+                    <div class="pr__links">
+                        <a href="#" class="link">Вызвать мастера</a>
+                        <a href="#" class="link">Позвонить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__inner slide">
+                <div class="heading is--block is--white is--subheading">Опишите свою проблему <span>В течение 5 минут с Вами свяжется специалист</span></div>
+                <div class="form__wrap">
+                    <div class="form__wrap__inner">
+                        <div class="form__group is--w50">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Имя</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w50">
+                            <input type="text" id="phone" name="phone" required>
+                            <label for="phone">Телефон</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w100">
+                            <input type="text" id="desc" name="desc" required>
+                            <label for="desc">Описание проблемы</label>
+                            <span class="is--border"></span>
+                        </div>
+                        <div class="form__group is--w100 is--submit">
+                            <div class="form__group__submit">
+                                <div class="form__group__submit__btn">
+                                    <input type="submit" class="btn" value="Отправить">
+                                </div>
+                                <div class="form__group__submit__text">
+                                    Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="#">обработки персональных данных</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="repair--icons">
+            <div class="repair--icons__inner">
+                <div class="repair--icons__heading">
+                    <div class="heading is--block is--dark">Преимущества при ремонте в нашем сервисе</div>
+                </div>
+                <div class="repair--icons__list">
+                    <ul>
+                        <li>
+                            <div class="repair--icons__block">
+                                <div class="repair--icons__block__icon"><span class="anim" data-animation-Name="jackInTheBox" data-animation-delay="delay--s15"><svg class="svg-rp1-dims svg is--rp1">
+                                            <use xlink:href="img/svg/sprites.svg#rp1"></use>
+                                        </svg></span></div>
+                                <div class="repair--icons__block__text anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s15">Бесплатная диагностика и <br> ремонт на дому/офисе.</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="repair--icons__block">
+                                <div class="repair--icons__block__icon"><span class="anim" data-animation-Name="jackInTheBox" data-animation-delay="delay--s15"><svg class="svg-rp2-dims svg is--rp2">
+                                            <use xlink:href="img/svg/sprites.svg#rp2"></use>
+                                        </svg></span></div>
+                                <div class="repair--icons__block__text anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s15">Оригинальные <br> комплектующие</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="repair--icons__block">
+                                <div class="repair--icons__block__icon"><span class="anim" data-animation-Name="jackInTheBox" data-animation-delay="delay--s15"><svg class="svg-rp3-dims svg is--rp3">
+                                            <use xlink:href="img/svg/sprites.svg#rp3"></use>
+                                        </svg></span></div>
+                                <div class="repair--icons__block__text anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s15">Самый быстрый <br> ремонт</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="repair--icons__block">
+                                <div class="repair--icons__block__icon"><span class="anim" data-animation-Name="jackInTheBox" data-animation-delay="delay--s15"><svg class="svg-rp4-dims svg is--rp4">
+                                            <use xlink:href="img/svg/sprites.svg#rp4"></use>
+                                        </svg></span></div>
+                                <div class="repair--icons__block__text anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s15">Гарантии <br> на работу</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="repair--icons__block">
+                                <div class="repair--icons__block__icon"><span class="anim" data-animation-Name="jackInTheBox" data-animation-delay="delay--s15"><svg class="svg-rp5-dims svg is--rp5">
+                                            <use xlink:href="img/svg/sprites.svg#rp5"></use>
+                                        </svg></span></div>
+                                <div class="repair--icons__block__text anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s15">В наличии <br> все запчасти</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="repair--price">
+            <div class="repair--price__inner">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                <div class="repair--price__dropdown">
+                                    Тип ремонта
+                                    <div class="repair--price__dropdown__block">
+                                        <div class="repair--price__dropdown__label">iPhone X</div>
+                                        <div class="repair--price__dropdown__container">
+                                            <ul>
+                                                <li data-target="is-iphonex"><span>iPhone X</span></li>
+                                                <li data-target="is-iphone8"><span>iPhone 8</span></li>
+                                                <li data-target="is-samsung"><span>Samsung</span></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </th>
+                            <th>Время</th>
+                            <th>Цена</th>
+                        </tr>
+                    </thead>
+                    <tbody id="is-iphonex" class="__price-tab is--active">
+
+                        <tr data-title="Осмотр и диагностика телефона">
+                            <td>Осмотр и диагностика телефона</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title="Диагностика с применением аппаратно-программного комплекса">
+                            <td>Диагностика с применением аппаратно-программного комплекса</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title=" Профилактика">
+                            <td> Профилактика</td>
+                            <td data-title="Время:">15 минут</td>
+                            <td data-title="Цена:">700 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена дисплейного модуля (сенсорный экран и дисплей Retina)">
+                            <td>Замена дисплейного модуля (сенсорный экран и дисплей Retina)</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">1490 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт динамика слухового (спикер)">
+                            <td>Замена/ремонт динамика слухового (спикер)</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Осмотр и диагностика телефона">
+                            <td>Осмотр и диагностика телефона</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт разъёма наушников">
+                            <td>Замена/ремонт разъёма наушников</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт камеры">
+                            <td>Замена/ремонт камеры</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr>
+                            <td>this is iphonex</td>
+                            <td data-title="Время:">iphonex</td>
+                            <td data-title="Цена:">iphonex</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="is-iphone8" class="__price-tab ">
+
+                        <tr data-title="Осмотр и диагностика телефона">
+                            <td>Осмотр и диагностика телефона</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title="Диагностика с применением аппаратно-программного комплекса">
+                            <td>Диагностика с применением аппаратно-программного комплекса</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title=" Профилактика">
+                            <td> Профилактика</td>
+                            <td data-title="Время:">15 минут</td>
+                            <td data-title="Цена:">700 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена дисплейного модуля (сенсорный экран и дисплей Retina)">
+                            <td>Замена дисплейного модуля (сенсорный экран и дисплей Retina)</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">1490 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт динамика слухового (спикер)">
+                            <td>Замена/ремонт динамика слухового (спикер)</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Осмотр и диагностика телефона">
+                            <td>Осмотр и диагностика телефона</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт разъёма наушников">
+                            <td>Замена/ремонт разъёма наушников</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт камеры">
+                            <td>Замена/ремонт камеры</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr>
+                            <td>this is iphone8</td>
+                            <td data-title="Время:">iphone8</td>
+                            <td data-title="Цена:">iphone8</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="is-samsung" class="__price-tab ">
+
+                        <tr data-title="Осмотр и диагностика телефона">
+                            <td>Осмотр и диагностика телефона</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title="Диагностика с применением аппаратно-программного комплекса">
+                            <td>Диагностика с применением аппаратно-программного комплекса</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title=" Профилактика">
+                            <td> Профилактика</td>
+                            <td data-title="Время:">15 минут</td>
+                            <td data-title="Цена:">700 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена дисплейного модуля (сенсорный экран и дисплей Retina)">
+                            <td>Замена дисплейного модуля (сенсорный экран и дисплей Retina)</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">1490 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт динамика слухового (спикер)">
+                            <td>Замена/ремонт динамика слухового (спикер)</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Осмотр и диагностика телефона">
+                            <td>Осмотр и диагностика телефона</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">Бесплатно</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт разъёма наушников">
+                            <td>Замена/ремонт разъёма наушников</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr data-title="Замена/ремонт камеры">
+                            <td>Замена/ремонт камеры</td>
+                            <td data-title="Время:">...</td>
+                            <td data-title="Цена:">990 &#8381;</td>
+                        </tr>
+
+                        <tr>
+                            <td>this is samsung</td>
+                            <td data-title="Время:">samsung</td>
+                            <td data-title="Цена:">samsung</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="carousel__big">
+            <div class="carousel__big__inner slide">
+                <div class="carousel__big__heading">
+                    <div class="heading is--block is--dark">Мы можем починить также</div>
+                </div>
+                <div class="carousel__big__items">
+                    <div class="carousel__big__items__wrap">
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Ноутбуки</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_notebooks.png" alt="Ноутбуки" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Планшеты</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_tablets.png" alt="Планшеты" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Телефоны</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_phones.png" alt="Телефоны" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Ноутбуки</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_notebooks.png" alt="Ноутбуки" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Планшеты</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_tablets.png" alt="Планшеты" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel__big__item">
+                            <div class="carousel__big__card is--all">
+                                <div class="carousel__big__card__inner">
+                                    <a href="#" class="carousel__big__card__wrap">
+                                        <div class="carousel__big__card__title">Телефоны</div>
+                                        <div class="carousel__big__card__link">
+                                            <span>Смотреть</span>
+                                        </div>
+                                        <div class="carousel__big__card__img">
+                                            <img src="img/carousel_phones.png" alt="Телефоны" class="anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="carousel__big__controls">
+                        <button class="is--prev"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                        <button class="is--next"><svg class="svg-carousel_arrow-dims svg is--carousel_arrow">
+                                <use xlink:href="img/svg/sprites.svg#carousel_arrow"></use>
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top__inner">
+                <div class="footer__top__wrap">
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">Apple</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="apple.html">iPhone</a></li>
+                                <li><a href="apple.html">iMac</a></li>
+                                <li><a href="apple.html">iPad</a></li>
+                                <li><a href="apple.html">iPod</a></li>
+                                <li><a href="apple.html">iWatch</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">Другая техника</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="smartphones.html">Samsung</a></li>
+                                <li><a href="smartphones.html">Huawei</a></li>
+                                <li><a href="smartphones.html">Meizu</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">О компании</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="#">Акциии</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--contacts">
+                        <div class="footer__top__block__heading">Салоны в Орле</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><span>302030, г. Орел</span></li>
+                                <li><span>ул. Московская, 21</span></li>
+                                <li><a href="tel:84862490606">+7 (4862) 49-06-06</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--bottom">
+                        <div class="footer__top__block__heading">Мы в социальных сетях:</div>
+                        <div class="footer__top__block__social">
+                            <ul>
+                                <li><a href="#"><svg class="svg-fb-dims svg is--fb">
+                                            <use xlink:href="img/svg/sprites.svg#fb"></use>
+                                        </svg></a></li>
+                                <li><a href="#"><svg class="svg-inst-dims svg is--inst">
+                                            <use xlink:href="img/svg/sprites.svg#inst"></use>
+                                        </svg></a></li>
+                                <li><a href="#"><svg class="svg-vk-dims svg is--vk">
+                                            <use xlink:href="img/svg/sprites.svg#vk"></use>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__top__block is--bottom">
+                        <div class="footer__top__block__heading">Принимаем:</div>
+                        <div class="footer__top__block__payment">
+                            <ul>
+                                <li><svg class="svg-visa-dims svg is--visa">
+                                        <use xlink:href="img/svg/sprites.svg#visa"></use>
+                                    </svg></li>
+                                <li><svg class="svg-mastercard-dims svg is--mastercard">
+                                        <use xlink:href="img/svg/sprites.svg#mastercard"></use>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom__inner">
+                <div class="footer__bottom__cop"><span>2009—2019</span> Сервисный центр AppleService</div>
+                <nav class="footer__bottom__menu">
+                    <ul>
+                        <li><a href="simple.html">Политика конфиденциальности</a></li>
+                        <li><a href="simple.html">Юридическая информация</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__bottom__dorohov">
+                    <a href="https://dorohovdesign.ru/" class="footer__bottom__dorohov__block" target="_blank">
+                        <div class="footer__bottom__dorohov__block__text">Дизайн и разработка — </div>
+                        <div class="footer__bottom__dorohov__block__logo"><svg class="svg-dorohov-dims svg is--dorohov">
+                                <use xlink:href="img/svg/sprites.svg#dorohov"></use>
+                            </svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="overlay"></div>
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

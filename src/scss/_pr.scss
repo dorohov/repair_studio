@@ -1,4 +1,13 @@
 .pr {
+    overflow: hidden;
+    img {
+        user-drag: none; 
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
     &.is--index-memory {
         padding-top: 115px;
         overflow: hidden;
@@ -35,6 +44,284 @@
             }
         }
     }
+    &.is--banner-phone {
+        background: $grey;
+        padding-top: 110px;
+        &.is--iphonex {
+            .pr {
+                &__left {
+                    max-width: 430px;
+                }
+            }
+        }
+        &.is--galaxys10 {
+            .pr {
+                &__left {
+                    max-width: 570px;
+                }
+            }
+        }
+        .pr {
+            &__inner {
+                @extend %container;
+                display: flex;
+            }
+            &__left {
+                width: 100%;
+                margin-right: 15%;
+                display: flex;
+                align-items: flex-end;
+            }
+            &__right {
+                padding-bottom: 30px;
+                white-space: nowrap;
+            }
+            &__title {
+                color: $dark;
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 50px;
+                margin-bottom: 30px;
+            }
+            &__desc {
+                color: $dark;
+                font-size: 16px;
+                margin-bottom: 55px;
+            }
+            &__links {
+                a {
+                    display: inline-block;
+                    margin-right: 35px;
+                }
+            }
+        }
+    }
+    &.is--stock-one {
+        @include pinkGradient();
+        margin-bottom: 15px;
+        overflow: hidden;
+        .pr {
+            &__inner {
+                padding-top: 150px;
+                padding-bottom: 270px;
+                @extend %container;
+                position: relative;
+                &::after {
+                    background-image: url(../../img/stock1.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: center bottom;
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    max-width: 545px;
+                    width: 100%;
+                    height: 90%;
+                    content: '';
+                }
+            }
+            &__wrap {
+                padding-right: 550px;
+            }
+            &__title {
+                color: #fff;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 50px;
+                text-transform: uppercase;
+                margin-bottom: 35px;
+            }
+            &__desc {
+                font-size: 18px;
+                line-height: normal;
+                color: #fff;
+                font-weight: 300;
+                margin-bottom: 65px;
+                max-width: 715px;
+            }
+            &__link {
+                a {
+                    display: inline-block;
+                    color: #fff;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 19px;
+                    &::after {
+                        content: url(../../img/svg/white_arrow.svg);
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+    &.is--stock-two {
+        background: $grey;
+        margin-bottom: 15px;
+        padding: 60px 0;
+        overflow: hidden;
+        .pr {
+            &__inner {
+                @extend %container;
+            }
+            &__wrap {
+                display: flex;
+                align-items: center;
+            }
+            &__left {
+                min-width: 580px;
+                max-width: 580px;
+                width: 100%;
+                margin-right: 10%;
+            }
+            &__title {
+                color: $black;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 50px;
+                text-transform: uppercase;
+                margin-bottom: 35px;
+            }
+            &__desc {
+                font-size: 18px;
+                line-height: normal;
+                font-weight: 300;
+                margin-bottom: 65px;
+                max-width: 715px;
+            }
+        }
+    }
+    &.is--stock-three {
+        padding: 180px 0;
+        background: $black;
+        position: relative;
+        overflow: hidden;
+        &::after {
+            background-image: url(../../img/stock3.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right bottom;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            max-width: 880px;
+            width: 100%;
+            height: 70%;
+            content: '';
+        }
+        .pr {
+            &__inner {
+                @extend %container;
+            }
+            &__wrap {
+                width: 100%;
+                color: #fff;
+                padding-right: 750px;
+                position: relative;
+                z-index: 50;
+            }
+            &__title {
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 50px;
+                text-transform: uppercase;
+                margin-bottom: 35px;
+                max-width: 750px;
+            }
+            &__desc {
+                font-size: 18px;
+                line-height: normal;
+                font-weight: 300;
+                margin-bottom: 65px;
+                max-width: 750px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .pr {
+        &.is--stock-three {
+            &::after {
+                max-width: 470px;
+            }
+            .pr {
+                &__wrap {
+                    padding-right: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .pr {
+        &.is--banner-phone {
+            .pr {
+                &__desc {
+                    white-space: normal;
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &.is--stock-one {
+            .pr {
+                &__inner {
+                    &::after {
+                        max-width: 320px;
+                    }
+                }
+                &__wrap {
+                    padding-right: 0;
+                }
+            }
+        }
+        &.is--stock-two {
+            .pr {
+                &__left {
+                    max-width: 300px;
+                    min-width: 300px;
+                }
+            }
+        }
+        &.is--stock-three {
+            &::after {
+                max-width: 300;
+            }
+            .pr {
+                &__wrap {
+                    padding-right: 300px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .pr {
+        &.is--banner-phone {
+            padding: 50px 0 35px 0;
+            .pr {
+                &__left {
+                    display: none;
+                }
+                &__title {
+                    font-size: 36px;
+                    line-height: 30px;
+                    margin-bottom: 20px;
+                }
+                &__desc {
+                    margin-bottom: 40px;
+                }
+                &__links {
+                    a {
+                        margin: 0 20px 15px 0;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $resp768) {
@@ -58,6 +345,65 @@
                 }
                 &__btn {
                     margin-bottom: 50px;
+                }
+            }
+        }
+        &.is--stock-one {
+            .pr {
+                &__inner {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    &::after {
+                        content: none;
+                    }
+                }
+                &__title {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+                &__desc {
+                    font-size: 16px;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        &.is--stock-two {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            .pr {
+                &__left {
+                    display: none;
+                }
+                &__title {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+                &__desc {
+                    font-size: 16px;
+                    margin-bottom: 35px;
+                }
+            }
+        }
+        &.is--stock-three {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            &::after {
+                content: none;
+            }
+            .pr {
+                &__wrap {
+                    padding-right: 0;
+                }
+                &__title {
+                    font-size: 18px;
+                    line-height: 22px;
+                    margin-bottom: 15px;
+                }
+                &__desc {
+                    font-size: 16px;
+                    margin-bottom: 35px;
                 }
             }
         }

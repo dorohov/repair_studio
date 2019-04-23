@@ -1,0 +1,39 @@
+<div class="repair--price">
+    <div class="repair--price__inner">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <div class="repair--price__dropdown">
+                                Тип ремонта
+                            <div class="repair--price__dropdown__block">
+                                <div class="repair--price__dropdown__label">iPhone X</div>
+                                <div class="repair--price__dropdown__container">
+                                    <ul>
+                                        <li data-target="is-iphonex"><span>iPhone X</span></li>
+                                        <li data-target="is-iphone8"><span>iPhone 8</span></li>
+                                        <li data-target="is-samsung"><span>Samsung</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </th>
+                    <th>Время</th>
+                    <th>Цена</th>
+                </tr>
+            </thead>
+            @@include('repair.block.price.block.html', {
+                "id": "iphonex",
+                "active": "true"
+            })
+            @@include('repair.block.price.block.html', {
+                "id": "iphone8",
+                "active": "false"
+            })
+            @@include('repair.block.price.block.html', {
+                "id": "samsung",
+                "active": "false"
+            })
+        </table>
+    </div>
+</div>
