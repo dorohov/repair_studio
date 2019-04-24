@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Магазин — Студия Ремонта</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+</head>
+
+<body>
+    <header class="navbar is--bg_dark">
+        <div class="navbar__inner">
+            <div class="navbar__logo">
+                <a href="index.html">
+                    <svg class="svg-logo-dims svg is--logo">
+                        <use xlink:href="img/svg/sprites.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <nav class="navbar__menu">
+                <!-- На ссылку можно повесить класс "is--active" -->
+                <ul>
+
+                    <li><a href="apple.html">Ремонт Apple</a></li>
+
+                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
+
+                    <li><a href="catalog.html">Магазин</a></li>
+
+                    <li><a href="stock.html">Акции</a></li>
+
+                    <li><a href="about.html">О сервисе</a></li>
+
+                    <li><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar__search">
+                <form class="navbar__search__inner">
+                    <div class="navbar__search__btn">
+                        <button type="button" id="#searchMenuBtn">
+                            <svg class="svg-search-dims svg is--search">
+                                <use xlink:href="img/svg/sprites.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="navbar__search__field">
+                        <input type="text">
+                    </div>
+                </form>
+            </div>
+            <div class="navbar__phone">
+                <a href="tel:84862490606">+7 (4862) 49-06-06</a>
+            </div>
+            <div class="navbar__burger">
+                <button id="mobileMenuBtn">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="navbar__mobcontainer">
+            <div class="navbar__mobcontainer__search">
+                <form class="navbar__mobcontainer__search__field">
+                    <button><svg class="svg-search-dims svg is--search">
+                            <use xlink:href="img/svg/sprites.svg#search"></use>
+                        </svg></button>
+                    <input type="text">
+                </form>
+            </div>
+            <nav class="navbar__mobcontainer__menu">
+                <!-- На ссылку можно повесить класс "is--active" -->
+                <ul>
+
+                    <li><a href="apple.html">Ремонт Apple</a></li>
+
+                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
+
+                    <li><a href="catalog.html">Магазин</a></li>
+
+                    <li><a href="stock.html">Акции</a></li>
+
+                    <li><a href="about.html">О сервисе</a></li>
+
+                    <li><a href="contacts.html">Контакты</a></li>
+
+                </ul>
+            </nav>
+            <div class="navbar__mobcontainer__phone"><a href="tel:84862490606">+7 (4862) 49-06-06</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="page">
+            <div class="catalog">
+                <div class="catalog__inner">
+                    <div class="catalog__top">
+                        <div class="catalog__heading">
+                            <div class="heading is--page is--dark">Магазин</div>
+                        </div>
+                        <div class="catalog__sort">
+                            <div class="catalog__sort__label">Сортировать:</div>
+                            <div class="catalog__sort__list">
+                                <ul>
+                                    <li class="is--active">apple</li>
+                                    <li class="is--active is--reverse">другие смартфоны</li>
+                                    <li>пункт</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="catalog__mobile"><span></span> Категории</div>
+                    </div>
+                    <div class="catalog__wrap">
+                        <aside class="catalog__aside">
+                            <div class="catalog__aside__close">
+                                Закрыть
+                            </div>
+                            <div class="catalog__aside__menu">
+                                <div class="catalog__aside__menu__heading">Тип</div>
+                                <div class="catalog__aside__menu__list">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="t1" name="t1" checked>
+                                            <label for="t1" class="is--box"><svg class="svg-check-dims svg is--check">
+                                                    <use xlink:href="img/svg/sprites.svg#check"></use>
+                                                </svg></label>
+                                            <label for="t1" class="is--text">Чехлы</label>
+
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="t2" name="t2">
+                                            <label for="t2" class="is--box"><svg class="svg-check-dims svg is--check">
+                                                    <use xlink:href="img/svg/sprites.svg#check"></use>
+                                                </svg></label>
+                                            <label for="t2" class="is--text">Защитные стекла</label>
+
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="t3" name="t3">
+                                            <label for="t3" class="is--box"><svg class="svg-check-dims svg is--check">
+                                                    <use xlink:href="img/svg/sprites.svg#check"></use>
+                                                </svg></label>
+                                            <label for="t3" class="is--text">Зарядные устройства</label>
+
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="t4" name="t4">
+                                            <label for="t4" class="is--box"><svg class="svg-check-dims svg is--check">
+                                                    <use xlink:href="img/svg/sprites.svg#check"></use>
+                                                </svg></label>
+                                            <label for="t4" class="is--text">Внешние аккумуляторы</label>
+
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="t5" name="t5">
+                                            <label for="t5" class="is--box"><svg class="svg-check-dims svg is--check">
+                                                    <use xlink:href="img/svg/sprites.svg#check"></use>
+                                                </svg></label>
+                                            <label for="t5" class="is--text">Питание и кабели</label>
+
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="t6" name="t6">
+                                            <label for="t6" class="is--box"><svg class="svg-check-dims svg is--check">
+                                                    <use xlink:href="img/svg/sprites.svg#check"></use>
+                                                </svg></label>
+                                            <label for="t6" class="is--text">Наушники</label>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog__aside__btn">
+                                <a href="#" class="btn">Показать</a>
+                            </div>
+                        </aside>
+                        <div class="catalog__main">
+                            <div class="catalog__main__inner">
+                                <div class="catalog__card">
+                                    <div class="catalog__card__inner">
+                                        <div class="catalog__card__img"><img src="img/shop1.png" alt=""></div>
+                                        <div class="catalog__card__cat"><a href="#">Чехлы для iPhone</a></div>
+                                        <div class="catalog__card__title">Силиконовый чехол <br> для iPhone 6\6s</div>
+                                        <div class="catalog__card__price">1 590 &#8381;</div>
+                                        <div class="catalog__card__link"><a href="#" class="link">Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card__inner">
+                                        <div class="catalog__card__img"><img src="img/shop2.png" alt=""></div>
+                                        <div class="catalog__card__cat"><a href="#">Чехлы для iPhone</a></div>
+                                        <div class="catalog__card__title">Силиконовый чехол <br> для iPhone 7</div>
+                                        <div class="catalog__card__price">1 590 &#8381;</div>
+                                        <div class="catalog__card__link"><a href="#" class="link">Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card__inner">
+                                        <div class="catalog__card__img"><img src="img/shop3.png" alt=""></div>
+                                        <div class="catalog__card__cat"><a href="#">Чехлы для iPhone</a></div>
+                                        <div class="catalog__card__title">Силиконовый чехол <br> для iPhone 8</div>
+                                        <div class="catalog__card__price">1 590 &#8381;</div>
+                                        <div class="catalog__card__link"><a href="#" class="link">Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card__inner">
+                                        <div class="catalog__card__img"><img src="img/shop4.png" alt=""></div>
+                                        <div class="catalog__card__cat"><a href="#">Чехлы для iPhone</a></div>
+                                        <div class="catalog__card__title">Силиконовый чехол <br> для iPhone 6\6s</div>
+                                        <div class="catalog__card__price">1 590 &#8381;</div>
+                                        <div class="catalog__card__link"><a href="#" class="link">Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card__inner">
+                                        <div class="catalog__card__img"><img src="img/shop5.png" alt=""></div>
+                                        <div class="catalog__card__cat"><a href="#">Чехлы для iPhone</a></div>
+                                        <div class="catalog__card__title">Силиконовый чехол <br> для iPhone 7</div>
+                                        <div class="catalog__card__price">1 590 &#8381;</div>
+                                        <div class="catalog__card__link"><a href="#" class="link">Купить</a></div>
+                                    </div>
+                                </div>
+                                <div class="catalog__card">
+                                    <div class="catalog__card__inner">
+                                        <div class="catalog__card__img"><img src="img/shop6.png" alt=""></div>
+                                        <div class="catalog__card__cat"><a href="#">Чехлы для iPhone</a></div>
+                                        <div class="catalog__card__title">Силиконовый чехол <br> для iPhone 8</div>
+                                        <div class="catalog__card__price">1 590 &#8381;</div>
+                                        <div class="catalog__card__link"><a href="#" class="link">Купить</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="footer__top__inner">
+                <div class="footer__top__wrap">
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">Apple</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="apple.html">iPhone</a></li>
+                                <li><a href="apple.html">iMac</a></li>
+                                <li><a href="apple.html">iPad</a></li>
+                                <li><a href="apple.html">iPod</a></li>
+                                <li><a href="apple.html">iWatch</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">Другая техника</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="smartphones.html">Samsung</a></li>
+                                <li><a href="smartphones.html">Huawei</a></li>
+                                <li><a href="smartphones.html">Meizu</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--menu">
+                        <div class="footer__top__block__heading">О компании</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><a href="#">Акциии</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--contacts">
+                        <div class="footer__top__block__heading">Салоны в Орле</div>
+                        <nav class="footer__top__block__menu">
+                            <ul>
+                                <li><span>302030, г. Орел</span></li>
+                                <li><span>ул. Московская, 21</span></li>
+                                <li><a href="tel:84862490606">+7 (4862) 49-06-06</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer__top__block is--bottom">
+                        <div class="footer__top__block__heading">Мы в социальных сетях:</div>
+                        <div class="footer__top__block__social">
+                            <ul>
+                                <li><a href="#"><svg class="svg-fb-dims svg is--fb">
+                                            <use xlink:href="img/svg/sprites.svg#fb"></use>
+                                        </svg></a></li>
+                                <li><a href="#"><svg class="svg-inst-dims svg is--inst">
+                                            <use xlink:href="img/svg/sprites.svg#inst"></use>
+                                        </svg></a></li>
+                                <li><a href="#"><svg class="svg-vk-dims svg is--vk">
+                                            <use xlink:href="img/svg/sprites.svg#vk"></use>
+                                        </svg></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__top__block is--bottom">
+                        <div class="footer__top__block__heading">Принимаем:</div>
+                        <div class="footer__top__block__payment">
+                            <ul>
+                                <li><svg class="svg-visa-dims svg is--visa">
+                                        <use xlink:href="img/svg/sprites.svg#visa"></use>
+                                    </svg></li>
+                                <li><svg class="svg-mastercard-dims svg is--mastercard">
+                                        <use xlink:href="img/svg/sprites.svg#mastercard"></use>
+                                    </svg></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom__inner">
+                <div class="footer__bottom__cop"><span>2009—2019</span> Сервисный центр AppleService</div>
+                <nav class="footer__bottom__menu">
+                    <ul>
+                        <li><a href="simple.html">Политика конфиденциальности</a></li>
+                        <li><a href="simple.html">Юридическая информация</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__bottom__dorohov">
+                    <a href="https://dorohovdesign.ru/" class="footer__bottom__dorohov__block" target="_blank">
+                        <div class="footer__bottom__dorohov__block__text">Дизайн и разработка — </div>
+                        <div class="footer__bottom__dorohov__block__logo"><svg class="svg-dorohov-dims svg is--dorohov">
+                                <use xlink:href="img/svg/sprites.svg#dorohov"></use>
+                            </svg></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="overlay"></div>
+    <script src="dist/js/jquery-3.3.1.min.js"></script>
+    <script src="dist/js/slick.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
+    <script src="dist/js/main.js"></script>
+</body>
+
+</html>

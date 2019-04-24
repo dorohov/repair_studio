@@ -1,5 +1,8 @@
 body {
     font-family: 'SF UI Display';
+    &.is--overlay {
+        overflow: hidden;
+    }
 }
 
 *,

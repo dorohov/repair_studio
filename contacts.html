@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Акции — Студия Ремонта</title>
+    <title>Контакты — Студия Ремонта</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
@@ -92,43 +92,73 @@
     </header>
     <main>
         <div class="page">
-            <div class="pr is--stock-one">
-                <div class="pr__inner">
-                    <div class="pr__wrap anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
-                        <div class="pr__title">Скидка 10% на работы за отзыв</div>
-                        <div class="pr__desc">Поделитесь своими впечатлениями и объективной оценкой нашей работы с другими
-                            пользователями на отзывах Яндекс, Google, Yell. Сумма переводится на ваш
-                            мобильный номер при подтверждении отзыва.</div>
-                        <div class="pr__link"><a href="reviews.html">Оставить отзыв</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="pr is--stock-two">
-                <div class="pr__inner">
-                    <div class="pr__wrap">
-                        <div class="pr__left">
-                            <img src="img/stock2.png" alt="">
-                        </div>
-                        <div class="pr__right anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
-                            <div class="pr__title">Для тех, кто всегда с нами</div>
-                            <div class="pr__desc">Скидка 15% для самых верных друзей MacPlus. Если Вы — наш постоянный клиент
-                                и лично убедились в качестве сервиса, а общая стоимость ремонта перешагнула за
-                                50 000 руб, Вы заслужили супер скидку на наши услуги. Нам очень приятно, что Вы всегда доверяете нам свою технику!
+            <div class="contacts-info">
+                <div class="contacts-info__inner">
+                    <div class="contacts-info__wrap">
+                        <div class="contacts-info__left">
+                            <div class="contacts-info__left__heading">Контакты <span>Сервисный центр в Орле</span></div>
+                            <div class="contacts-info__left__wrap">
+                                <div class="contacts-info__left__list">
+                                    <ul>
+                                        <li>
+                                            <div class="contacts-info__left__list__block">
+                                                <div class="contacts-info__left__list__block__icon"><svg class="svg-c_marker-dims svg is--c_marker">
+                                                        <use xlink:href="img/svg/sprites.svg#c_marker"></use>
+                                                    </svg></div>
+                                                <div class="contacts-info__left__list__block__text"><span>Орёл, ул. Московская, 21</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="contacts-info__left__list__block">
+                                                <div class="contacts-info__left__list__block__icon"><svg class="svg-c_clock-dims svg is--c_clock">
+                                                        <use xlink:href="img/svg/sprites.svg#c_clock"></use>
+                                                    </svg></div>
+                                                <div class="contacts-info__left__list__block__text"><span>Пн-Пт 09:00 - 20:00</span><span>Сб-Вс 10:00 - 19:00</span></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="contacts-info__left__list__block">
+                                                <div class="contacts-info__left__list__block__icon"><svg class="svg-c_phone-dims svg is--c_phone">
+                                                        <use xlink:href="img/svg/sprites.svg#c_phone"></use>
+                                                    </svg></div>
+                                                <div class="contacts-info__left__list__block__text"><a href="tel:84862490606">+7 (4862) 49-06-06</a></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="contacts-info__left__desc">
+                                    Услуги нашего сервисного центра включают наладку устройств Apple, начиная от простой замены платы, динамика, дисплея и заканчивая сложными ремонтно-восстановительными работами.
+                                </div>
                             </div>
-                            <div class="pr__link"><a href="#" class="link">Оставить заявку</a></div>
+                        </div>
+                        <div class="contacts-info__right">
+                            <div class="contacts-info__right__form">
+                                <div class="contacts-info__right__form__heading">Оставьте заявку</div>
+                                <form class="contacts-info__right__form__inner">
+                                    <div class="form__group is--w100">
+                                        <input type="text" id="name" name="name" required>
+                                        <label for="name">Имя</label>
+                                        <span class="is--border"></span>
+                                    </div>
+                                    <div class="form__group is--w100">
+                                        <input type="text" id="phone" name="phone" required>
+                                        <label for="phone">Телефон</label>
+                                        <span class="is--border"></span>
+                                    </div>
+                                    <div class="contacts-info__right__form__submit">
+                                        <input type="submit" class="btn" value="Заказать ремонт">
+                                        <div class="contacts-info__right__form__submit__cop">
+                                            Нажимая на кнопку, Вы соглашаетесь
+                                            с политикой обработки <a href="#">персональных данных</a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="pr is--stock-three">
-                <div class="pr__inner">
-                    <div class="pr__wrap anim" data-animation-Name="fadeInUp" data-animation-delay="delay--s25">
-                        <div class="pr__title">Для сервисных центров, корпоративных клиентов и партнеров</div>
-                        <div class="pr__desc">Индивидуальные условия обслуживания сервисным центрам, корпоративным клиентам и нашим партнерам. Стать корпоративным клиентом MacPlus очень просто. Все подробности Вы можете узнать у наших менеджеров.</div>
-                        <div class="pr__link"><a href="#" class="link">Оставить заявку</a></div>
-                    </div>
-                </div>
-            </div>
+            <div id="map"></div>
         </div>
     </main>
     <footer class="footer">

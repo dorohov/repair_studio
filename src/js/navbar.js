@@ -3,12 +3,17 @@
     $(function() {
 
         function toggleOverlay(type) {
-            if(type == 'show') $('#overlay').addClass('is--active')
+            if(type == 'show') {
+                $('#overlay').addClass('is--active')
+                $('body').addClass('is--overlay')
+            }
             else if (type == 'hide') {
                 $('#overlay').removeClass('is--active')
+                $('body').removeClass('is--overlay')
                 $('#mobileMenuBtn').removeClass('is--active')
                 $('#overlay').removeClass('is--active')
                 $('.navbar').removeClass('is--mobile-open')
+                $('.catalog__aside').removeClass('is--active')
             }
         }
 
@@ -22,7 +27,7 @@
 
         $('#mobileMenuBtn').on('click', function() {
             $(this).toggleClass('is--active')
-            $('#overlay').toggleClass('is--active')
+            toggleOverlay('show')
             $('.navbar').toggleClass('is--mobile-open')
         })
 
@@ -54,6 +59,15 @@
 
         $(document).scroll(function() {
             setBgForNavbar()
+        })
+
+        $('.catalog__mobile').on('click', function() {
+            $('.catalog__aside').addClass('is--active')
+            toggleOverlay('show')
+        })
+        $('.catalog__aside__close').on('click', function() {
+            $('.catalog__aside').removeClass('is--active')
+            toggleOverlay('hide')
         })
 
     })

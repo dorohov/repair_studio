@@ -18,6 +18,7 @@ $container_padding: 30px;
 }
 
 .heading {
+    font-weight: 600;
     &.is--white {
         color: #fff;
     }
@@ -26,7 +27,6 @@ $container_padding: 30px;
     }
     &.is--block {
         text-align: center;
-        font-weight: 600;
         font-size: 48px;
         line-height: 50px;
         margin-bottom: 60px;
@@ -39,6 +39,11 @@ $container_padding: 30px;
                 padding-top: 25px;
             }
         }
+    }
+    &.is--page {
+        margin-bottom: 40px;
+        font-size: 72px;
+        line-height: 75px;
     }
 }
 
@@ -68,6 +73,11 @@ $container_padding: 30px;
                     padding-top: 15px;
                 }
             }
+        }
+        &.is--page {
+            font-size: 26px;
+            line-height: 28px;
+            margin-bottom: 20px;
         }
     }
     .slide {

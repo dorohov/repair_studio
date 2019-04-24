@@ -84,6 +84,7 @@
         "contacts": "contacts.html",
         "catalog": "catalog.html",
         "reviews": "reviews.html",
-        "simple": "simple.html"
+        "simple": "simple.html",
+        "search": "search.html"
     }
 }

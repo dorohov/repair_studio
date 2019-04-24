@@ -1,0 +1,187 @@
+.contacts {
+    &-info {
+        background: $black;
+        &__inner {
+            @extend %container;
+        }
+        &__wrap {
+            padding: 60px 0 100px 0;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+        }
+        &__left {
+            &__heading {
+                font-weight: 600;
+                font-size: 72px;
+                line-height: 75px;
+                margin-bottom: 55px;
+                span {
+                    display: block;
+                    font-size: 18px;
+                    line-height: 19px;
+                    font-weight: 300;
+                    padding-top: 10px;
+                }
+            }
+            &__list {
+                margin-bottom: 50px;
+                ul {
+                    li {
+                        margin-bottom: 25px;
+                    }
+                }
+                &__block {
+                    display: flex;
+                    align-items: center;
+                    &__icon {
+                        margin-right: 12px;
+                        svg {
+                            fill: $blue;
+                        }
+                    }
+                    &__text {
+                        span {
+                            display: block;
+                        }
+                        a {
+                            color: #fff;
+                        }
+                        span,
+                        a {
+                            font-weight: 300;
+                            font-size: 16px;
+                            line-height: 23px;
+                        }
+                    }
+                }
+            }
+            &__desc {
+                max-width: 354px;
+                width: 100%;
+                font-weight: 300;
+            }
+        }
+        &__right {
+            max-width: 520px;
+            width: 100%;
+            margin-right: 250px;
+            &__form {
+                overflow: hidden;
+                &__heading {
+                    margin-bottom: 50px;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 50px;
+                }
+                &__inner {
+                    margin: 0 -40px;
+                }
+                &__submit {
+                    padding: 0 40px;
+                    display: flex;
+                    align-items: center;
+                    &__cop {
+                        padding-left: 25px;
+                        font-weight: 300;
+                        a {
+                            font-weight: 400;
+                            display: block;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#map {
+    height: 60vh;
+}
+
+@media (max-width: 1440px) {
+    .contacts {
+        &-info {
+            &__right {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .contacts {
+        &-info {
+            &__wrap {
+                flex-wrap: wrap;
+            }
+            &__left,
+            &__right {
+                max-width: 100%;
+                width: 100%;
+            }
+            &__left {
+                margin-bottom: 50px;
+                &__wrap {
+                    display: flex;
+                }
+                &__list {
+                    white-space: nowrap;
+                }
+                &__desc {
+                    padding-left: 50px;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .contacts {
+        &-info {
+            &__wrap {
+                padding-top: 20px;
+                padding-bottom: 30px;
+            }
+            &__left {
+                &__heading {
+                    font-size: 32px;
+                    line-height: 36px;
+                    margin-bottom: 30px;
+                }
+                &__wrap {
+                    flex-wrap: wrap;
+                }
+                &__list {
+                    margin-bottom: 20px;
+                    ul {
+                        li {
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+                &__desc {
+                    padding-left: 0;
+                }
+            }
+            &__right {
+                &__form {
+                    &__heading {
+                        font-size: 26px;
+                        line-height: 26px;
+                        margin-bottom: 20px;
+                    }
+                    &__submit {
+                        display: block;
+                        &__cop {
+                            padding: 20px 0 0 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

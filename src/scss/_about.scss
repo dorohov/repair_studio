@@ -1,5 +1,15 @@
 .about {
     &-banner {
+        position: relative;
+        overflow: hidden;
+        &::after {
+            content: '';
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
         &.is--black {
             background: $black;
             color: #fff;
@@ -11,13 +21,72 @@
         &.is--white {
             color: $dark;
         }
+        &.is--one {
+            &::after {
+                max-width: 580px;
+                background-image: url(../../img/aboutBannerOne.png);
+                left: 140px;
+                bottom: 0;
+                background-position: center bottom;
+            }
+            .about-banner__wrap {
+                margin-left: auto;
+                padding-left: 700px;
+                padding-right: 160px;   
+            }
+        }
+        &.is--two {
+            &::after {
+                max-width: 720px;
+                background-image: url(../../img/aboutBannerTwo.png);
+                background-position: center;
+                right: 10%;
+                top: 0;
+            }
+            .about-banner__wrap {
+                padding-right: 830px;
+            }
+        }
+        &.is--three {
+            &::after {
+                max-width: 710px;
+                background-image: url(../../img/aboutBannerThree.png);
+                background-position: center bottom;
+                left: 0;
+                top: 0;
+            }
+            .about-banner__wrap {
+                padding-left: 700px;
+                padding-right: 160px;  
+            }
+        }
+        &.is--four {
+            &::after {
+                max-width: 488px;
+                background-image: url(../../img/aboutBannerFour.png);
+                background-position: center bottom;
+                right: 10%;
+                top: 0;
+            }
+            .about-banner {
+                &__wrap {
+                    padding-right: 610px;
+                }
+                &__title,
+                &__desc {
+                    max-width: 840px;
+                }
+            }
+        }
         &__inner {
             @extend %container;
             padding-top: 155px;
             padding-bottom: 190px;
+            display: flex;
         }
         &__wrap {
-            
+            position: relative;
+            z-index: 50;
         }
         &__title {
             font-weight: 600;
@@ -32,6 +101,138 @@
             font-size: 16px;
             max-width: 690px;
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .about {
+        &-banner {
+            &.is--one {
+                &::after {
+                    max-width: 350px;
+                    left: 40px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-left: 490px;
+                        padding-right: 0;
+                    }
+                }
+            }
+            &.is--two {
+                &::after {
+                    max-width: 410px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-right: 550px;
+                    }
+                }
+            }
+            &.is--three {
+                &::after {
+                    max-width: 410px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-left: 490px;
+                        padding-right: 0;
+                    }
+                }
+            }
+            &.is--four {
+                &::after {
+                    max-width: 250px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-right: 400px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1200) {
+    .about {
+        &-banner {
+            &__title {
+                font-size: 28px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: $resp1025) {
+    .about {
+        &-banner {
+            &__inner {
+                padding: 80px 30px 80px;
+            }
+            &.is--one {
+                &::after {
+                    max-width: 240px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-left: 310px;
+                    }
+                }
+            }
+            &.is--two {
+                &::after {
+                    max-width: 250px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-right: 340px;
+                    }
+                }
+            }
+            &.is--three {
+                &::after {
+                    max-width: 250px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-left: 310px;
+                    }
+                }
+            }
+            &.is--four {
+                &::after {
+                    max-width: 170px;
+                }
+                .about-banner {
+                    &__wrap {
+                        padding-right: 270px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $resp768) {
+    .about {
+        &-banner {
+            &__inner {
+                padding: 40px 30px;
+            }
+            &::after {
+                opacity: .3;
+            }
+            &__wrap {
+                padding: 0 !important;
+            }
+            &__title {
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
         }
     }
 }

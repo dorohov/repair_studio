@@ -326,10 +326,18 @@
 
 @media (max-width: $resp768) {
     .pr {
+        &.is--banner-phone {
+            .pr {
+                &__title {
+                    line-height: 44px;
+                }
+            }
+        }
         &.is--index-memory {
             padding-top: 50px;
             .pr {
                 &__title {
+                    line-height: 44px !important;
                     &__text {
                         font-size: 26px;
                         line-height: 28px;
@@ -361,6 +369,7 @@
                     font-size: 18px;
                     line-height: 22px;
                     margin-bottom: 15px;
+                    line-height: 44px !important;
                 }
                 &__desc {
                     font-size: 16px;
@@ -379,6 +388,7 @@
                     font-size: 18px;
                     line-height: 22px;
                     margin-bottom: 15px;
+                    line-height: 44px !important;
                 }
                 &__desc {
                     font-size: 16px;
@@ -400,12 +410,16 @@
                     font-size: 18px;
                     line-height: 22px;
                     margin-bottom: 15px;
+                    line-height: 44px !important;
                 }
                 &__desc {
                     font-size: 16px;
                     margin-bottom: 35px;
                 }
             }
+        }
+        &__right {
+            white-space: normal !important;
         }
     }
 }
