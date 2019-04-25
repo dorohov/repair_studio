@@ -2,12 +2,12 @@
     <div class="contacts-info__right__form__heading">Оставьте заявку</div>
     <form class="contacts-info__right__form__inner">
         <div class="form__group is--w100">
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required data-parsley-no-focus>
             <label for="name">Имя</label>
             <span class="is--border"></span>
         </div>
         <div class="form__group is--w100">
-            <input type="text" id="phone" name="phone" required>
+            <input type="text" id="phone" name="phone" required data-parsley-no-focus data-parsley-length="[6, 11]" data-parsley-type="number">
             <label for="phone">Телефон</label>
             <span class="is--border"></span>
         </div>
@@ -15,7 +15,7 @@
             <input type="submit" class="btn" value="Заказать ремонт">
             <div class="contacts-info__right__form__submit__cop">
                 Нажимая на кнопку, Вы соглашаетесь 
-с политикой обработки <a href="#">персональных данных</a>
+с политикой обработки <a href="@@pages.simple">персональных данных</a>
             </div>
         </div>
     </form>

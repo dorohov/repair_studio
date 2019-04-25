@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#18181f">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <title>Контакты — Студия Ремонта</title>
     <link rel="stylesheet" href="dist/css/style.css">
 </head>
 
 <body>
+    <script src="dist/js/loader.js"></script>
     <header class="navbar is--bg_dark">
         <div class="navbar__inner">
             <div class="navbar__logo">
@@ -136,12 +144,12 @@
                                 <div class="contacts-info__right__form__heading">Оставьте заявку</div>
                                 <form class="contacts-info__right__form__inner">
                                     <div class="form__group is--w100">
-                                        <input type="text" id="name" name="name" required>
+                                        <input type="text" id="name" name="name" required data-parsley-no-focus>
                                         <label for="name">Имя</label>
                                         <span class="is--border"></span>
                                     </div>
                                     <div class="form__group is--w100">
-                                        <input type="text" id="phone" name="phone" required>
+                                        <input type="text" id="phone" name="phone" required data-parsley-no-focus data-parsley-length="[6, 11]" data-parsley-type="number">
                                         <label for="phone">Телефон</label>
                                         <span class="is--border"></span>
                                     </div>
@@ -149,7 +157,7 @@
                                         <input type="submit" class="btn" value="Заказать ремонт">
                                         <div class="contacts-info__right__form__submit__cop">
                                             Нажимая на кнопку, Вы соглашаетесь
-                                            с политикой обработки <a href="#">персональных данных</a>
+                                            с политикой обработки <a href="simple.html">персональных данных</a>
                                         </div>
                                     </div>
                                 </form>
@@ -191,10 +199,10 @@
                         <div class="footer__top__block__heading">О компании</div>
                         <nav class="footer__top__block__menu">
                             <ul>
-                                <li><a href="#">Акциии</a></li>
-                                <li><a href="#">Отзывы</a></li>
-                                <li><a href="#">Гарантии</a></li>
-                                <li><a href="#">Контакты</a></li>
+                                <li><a href="stock.html">Акциии</a></li>
+                                <li><a href="reviews.html">Отзывы</a></li>
+                                <li><a href="simple.html">Гарантии</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -262,9 +270,11 @@
     </footer>
     <div id="overlay"></div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
-    <script src="dist/js/slick.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
-    <script src="dist/js/main.js"></script>
+    <script src="dist/js/bundle-min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
 </body>
 
 </html>

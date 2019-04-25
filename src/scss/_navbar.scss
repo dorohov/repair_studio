@@ -63,6 +63,7 @@
         width: 300px;
         position: absolute;
         right: 30px;
+        top: calc(50% - 25px);
         &__inner {
             position: relative;
         }

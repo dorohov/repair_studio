@@ -1,34 +1,39 @@
 <div class="form">
     <div class="form__inner slide">
-        <div class="heading is--block is--white is--subheading">Опишите свою проблему <span>В течение 5 минут с Вами свяжется специалист</span></div>
-        <div class="form__wrap">
+        @@if(sub == " ") {
+            <div class="heading is--block is--white">@@title</div>
+        }
+        @@if(sub != " ") {
+            <div class="heading is--block is--white is--subheading">@@title <span>@@sub</span></div>
+        }
+        <form class="form__wrap">
             <div class="form__wrap__inner">
                 <div class="form__group is--w50">
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required data-parsley-no-focus>
                     <label for="name">Имя</label>
                     <span class="is--border"></span>
                 </div>
                 <div class="form__group is--w50">
-                    <input type="text" id="phone" name="phone" required>
+                    <input type="text" id="phone" name="phone" required data-parsley-no-focus data-parsley-length="[6, 11]" data-parsley-type="number">
                     <label for="phone">Телефон</label>
                     <span class="is--border"></span>
                 </div>
                 <div class="form__group is--w100">
-                    <input type="text" id="desc" name="desc" required>
-                    <label for="desc">Описание проблемы</label>
+                    <input type="text" id="desc" name="desc" required data-parsley-no-focus>
+                    <label for="desc">@@field</label>
                     <span class="is--border"></span>
                 </div>
                 <div class="form__group is--w100 is--submit">
                     <div class="form__group__submit">
                         <div class="form__group__submit__btn">
-                            <input type="submit" class="btn" value="Отправить">
+                            <input type="submit" class="btn" value="@@btn">
                         </div>
                         <div class="form__group__submit__text">
-                            Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="#">обработки персональных данных</a>
+                            Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="@@pages.simple">обработки персональных данных</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>

@@ -1,15 +1,15 @@
 <div class="form">
     <div class="form__inner slide">
         <div class="heading is--block is--white is--subheading">@@title <span>@@sub</span></div>
-        <div class="form__wrap">
+        <form class="form__wrap">
             <div class="form__wrap__inner">
                 <div class="form__group is--w50">
-                    <input type="text" id="fname" name="fname" required>
+                    <input type="text" id="fname" name="fname" required data-parsley-no-focus>
                     <label for="fname">Имя</label>
                     <span class="is--border"></span>
                 </div>
                 <div class="form__group is--w50">
-                    <input type="text" id="fphone" name="fphone" required>
+                    <input type="text" id="fphone" name="fphone" required data-parsley-no-focus data-parsley-length="[6, 11]" data-parsley-type="number">
                     <label for="fphone">Телефон</label>
                     <span class="is--border"></span>
                 </div>
@@ -19,11 +19,11 @@
                             <input type="submit" class="btn" value="@@btn">
                         </div>
                         <div class="form__group__submit__text">
-                            Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="#">обработки персональных данных</a>
+                            Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="@@pages.simple">обработки персональных данных</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 </div>

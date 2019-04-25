@@ -31,7 +31,12 @@
         }
     ]
 })
-@@include('../form/form.main.html')
+@@include('../form/form.main.html', {
+    "title": "Опишите свою проблему",
+    "sub": "В течение 5 минут с Вами свяжется специалист",
+    "field": "Описание проблемы",
+    "btn": "Отправить"
+})
 @@include('index.banner.memory.html')
 @@include('index.banner.services.main.html')
 @@include('../carousels/carousels.carousel.big.container.html', {

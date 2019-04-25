@@ -48,5 +48,30 @@
             })
         })
 
+        $('.reviews__list__inner').each(function() {
+            $(this).slick({
+                slidesToShow: 3,
+                nextArrow: $(this).closest('.reviews__inner').find('button.is--next'),
+                prevArrow: $(this).closest('.reviews__inner').find('button.is--prev'),
+                responsive: [
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 1,
+                            arrows: false,
+                            autoplay: true,
+                            autoplaySpeed: 1500,
+                        }
+                    }
+                ]
+            })
+        })
+
     })
 })(jQuery);

@@ -71,7 +71,12 @@
     "title": "Samsung Galaxy S10",
     "desc": "Приезжайте в наш центр, звоните или отправьте онлайн-заявку. <br> В любом случае вы получите профессиональное решение любой <br> проблемы при минимальных затратах времени и денежных средств."
 })
-@@include('../form/form.main.html')
+@@include('../form/form.main.html', {
+    "title": "Опишите свою проблему",
+    "sub": "В течение 5 минут с Вами свяжется специалист",
+    "field": "Описание проблемы",
+    "btn": "Отправить"
+})
 @@include('repair.block.icons.html')
 @@include('repair.block.price.html')
 @@include('../carousels/carousels.carousel.big.container.html', {

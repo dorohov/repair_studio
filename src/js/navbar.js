@@ -3,17 +3,34 @@
     $(function() {
 
         function toggleOverlay(type) {
-            if(type == 'show') {
+
+            function show() {
                 $('#overlay').addClass('is--active')
                 $('body').addClass('is--overlay')
+
             }
-            else if (type == 'hide') {
+
+            function hide() {
                 $('#overlay').removeClass('is--active')
                 $('body').removeClass('is--overlay')
                 $('#mobileMenuBtn').removeClass('is--active')
                 $('#overlay').removeClass('is--active')
                 $('.navbar').removeClass('is--mobile-open')
                 $('.catalog__aside').removeClass('is--active')
+
+            }
+
+            if(type == 'show') {
+                show()
+            }
+            else if (type == 'hide') {
+                hide()
+            }else if(type == 'toggle') {
+                if($('body').hasClass('is--overlay')) {
+                    hide()
+                }else {
+                    show()
+                }
             }
         }
 
@@ -25,10 +42,24 @@
             }
         }
 
+        setMainHeight()
+
+        function setMainHeight() {
+            var height = $('.footer').innerHeight()
+            $('main').css({
+                "minHeight": "calc(100vh - " + height + "px)"
+            })
+        }
+
+        $(window).resize(function() {
+            setMainHeight()
+        }) 
+
         $('#mobileMenuBtn').on('click', function() {
             $(this).toggleClass('is--active')
-            toggleOverlay('show')
-            $('.navbar').toggleClass('is--mobile-open')
+            $('.navbar').addClass('is--mobile-open')
+
+            toggleOverlay('toggle')
         })
 
         $('.navbar__search__btn').on('click', function() {
