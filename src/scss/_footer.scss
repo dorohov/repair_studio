@@ -10,7 +10,6 @@
             border-bottom: 1px solid #DEDEDE;
             padding-top: 70px;
             padding-bottom: 70px;
-            margin: 0 -15px;
         }
         &__block {
             max-width: 16.6666666%;
@@ -163,6 +162,8 @@
                 padding-bottom: 30px;
             }
             &__block {
+                padding-left: 0;
+                padding-right: 0;
                 &.is--menu {
                     display: none;
                 }
