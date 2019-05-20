@@ -39,6 +39,7 @@
             display: flex;
             li {
                 height: 100%;
+                position: relative;
                 a {
                     height: 100%;
                     display: flex;
@@ -47,12 +48,43 @@
                     font-weight: 300;
                     padding: 0 22px;
                     font-size: 16px;
+                }
+                &:hover {
+                    a {
+                        &.navbar__item {
+                            color: $blue;
+                            text-decoration: none;
+                        }
+                    }
+                    .navbar__menu__dropdown {
+                        display: block !important;
+                    }
+                }
+                &.is--active {
+                    a {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        &__dropdown {
+            position: absolute;
+            display: none !important;
+            height: auto !important;
+            padding: 30px 0;
+            background: #18181F;
+            border: 1px solid rgba(41, 114, 198, 0.1);
+            transform: translateY(-30px);
+            li {
+                height: auto !important;
+                a {
+                    height: auto !important;
+                    white-space: nowrap;
+                    padding-top: 7px !important;
+                    padding-bottom: 7px !important;
                     &:hover {
                         color: $blue;
                         text-decoration: none;
-                    }
-                    &.is--active {
-                        color: $blue;
                     }
                 }
             }

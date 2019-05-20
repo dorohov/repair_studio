@@ -7,11 +7,22 @@
             </a>
         </div>
         <nav class="navbar__menu">
-            <!-- На ссылку можно повесить класс "is--active" -->
             <ul>
-                @@for(var i = 0; i < menu.length; i++) {
-                    <li><a href="`+menu[i].url+`">`+menu[i].title+`</a></li>
-                }
+                <li>
+                    <a href="@@pages.apple" class="navbar__item">Ремонт Apple</a>
+                    <ul class="navbar__menu__dropdown">
+                        <li><a href="@@pages.apple">Ремонт iPhone</a></li>
+                        <li><a href="@@pages.apple">Ремонт Mac</a></li>
+                        <li><a href="@@pages.apple">Ремонт iPad</a></li>
+                        <li><a href="@@pages.apple">Ремонт iPod</a></li>
+                        <li><a href="@@pages.apple">Ремонт Watch</a></li>
+                    </ul>
+                </li>
+                <li><a href="@@pages.smartphones" class="navbar__item">Ремонт смартфонов</a></li>
+                <li class="is--active"><a href="@@pages.catalog" class="navbar__item">Магазин</a></li>
+                <li><a href="@@pages.stock" class="navbar__item">Акции</a></li>
+                <li><a href="@@pages.about" class="navbar__item">О сервисе</a></li>
+                <li><a href="@@pages.contacts" class="navbar__item">Контакты</a></li>
             </ul>
         </nav>
         <div class="navbar__search">
@@ -43,11 +54,13 @@
             </form>
         </div>
         <nav class="navbar__mobcontainer__menu">
-            <!-- На ссылку можно повесить класс "is--active" -->
             <ul>
-                @@for(var i = 0; i < menu.length; i++) {
-                    <li><a href="`+menu[i].url+`">`+menu[i].title+`</a></li>
-                }
+                <li><a href="@@pages.apple">Ремонт Apple</a></li>
+                <li><a href="@@pages.smartphones">Ремонт смартфонов</a></li>
+                <li><a href="@@pages.catalog">Магазин</a></li>
+                <li class="is--active"><a href="@@pages.stock">Акции</a></li>
+                <li><a href="@@pages.about">О сервисе</a></li>
+                <li><a href="@@pages.contacts">Контакты</a></li>
             </ul>
         </nav>
         <div class="navbar__mobcontainer__phone"><a href="@@phone_link">@@phone</a></div>

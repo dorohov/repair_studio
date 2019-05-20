@@ -28,21 +28,22 @@
                 </a>
             </div>
             <nav class="navbar__menu">
-                <!-- На ссылку можно повесить класс "is--active" -->
                 <ul>
-
-                    <li><a href="apple.html">Ремонт Apple</a></li>
-
-                    <li><a href="smartphones.html">Ремонт смартфонов</a></li>
-
-                    <li><a href="catalog.html">Магазин</a></li>
-
-                    <li><a href="stock.html">Акции</a></li>
-
-                    <li><a href="about.html">О сервисе</a></li>
-
-                    <li><a href="contacts.html">Контакты</a></li>
-
+                    <li>
+                        <a href="apple.html" class="navbar__item">Ремонт Apple</a>
+                        <ul class="navbar__menu__dropdown">
+                            <li><a href="apple.html">Ремонт iPhone</a></li>
+                            <li><a href="apple.html">Ремонт Mac</a></li>
+                            <li><a href="apple.html">Ремонт iPad</a></li>
+                            <li><a href="apple.html">Ремонт iPod</a></li>
+                            <li><a href="apple.html">Ремонт Watch</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="smartphones.html" class="navbar__item">Ремонт смартфонов</a></li>
+                    <li class="is--active"><a href="catalog.html" class="navbar__item">Магазин</a></li>
+                    <li><a href="stock.html" class="navbar__item">Акции</a></li>
+                    <li><a href="about.html" class="navbar__item">О сервисе</a></li>
+                    <li><a href="contacts.html" class="navbar__item">Контакты</a></li>
                 </ul>
             </nav>
             <div class="navbar__search">
@@ -78,21 +79,13 @@
                 </form>
             </div>
             <nav class="navbar__mobcontainer__menu">
-                <!-- На ссылку можно повесить класс "is--active" -->
                 <ul>
-
                     <li><a href="apple.html">Ремонт Apple</a></li>
-
                     <li><a href="smartphones.html">Ремонт смартфонов</a></li>
-
                     <li><a href="catalog.html">Магазин</a></li>
-
-                    <li><a href="stock.html">Акции</a></li>
-
+                    <li class="is--active"><a href="stock.html">Акции</a></li>
                     <li><a href="about.html">О сервисе</a></li>
-
                     <li><a href="contacts.html">Контакты</a></li>
-
                 </ul>
             </nav>
             <div class="navbar__mobcontainer__phone"><a href="tel:84862490606">+7 (4862) 49-06-06</a></div>
@@ -265,6 +258,10 @@
         </div>
     </footer>
     <div id="overlay"></div>
+    <div id="form_modal" class="modal">
+        <div class="modal__heading">Ваше сообщение отправлено</div>
+        <div class="modal__msg">В ближайшее время с Вами <br> свяжется специалист</div>
+    </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
     <script src="dist/js/bundle-min.js"></script>

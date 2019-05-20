@@ -18,14 +18,14 @@
             $('.__price-tab').removeClass('is--active')
         }
 
-        function showTab(id) {
+        function showTab(id, title) {
             hideTab()
             $('.__price-tab#' + id).addClass('is--active')
-            console.log(id)
+            $('.repair--price__dropdown__label').html(title)
         }
 
         $('.repair--price__dropdown__container ul li').on('click', function() {
-            showTab($(this).data('target'))
+            showTab($(this).data('target'), $(this).children('span').html())
             hideDropdown()
         })
 
