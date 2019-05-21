@@ -200,6 +200,11 @@
             color: $dark;
             margin-bottom: 50px;
         }
+        &__link {
+            a {
+                cursor: pointer;
+            }
+        }
     }
 }
 

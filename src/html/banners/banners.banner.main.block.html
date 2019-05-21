@@ -4,7 +4,12 @@
             <div class="banner__inner__title">@@title</div>
             <div class="banner__inner__desc">@@desc</div>
             <div class="banner__inner__btn">
-                <a href="@@btn_url" class="btn">@@btn_text</a>
+                @@if(id == 'bannerCarouselAbout') {
+                    <a href="@@btn_url" class="btn anchor">@@btn_text</a>
+                }
+                @@if(id != 'bannerCarouselAbout') {
+                    <a href="@@btn_url" class="btn">@@btn_text</a>
+                }
             </div>
             @@if(table == "true") {
                 <div class="banner__inner__info">

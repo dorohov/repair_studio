@@ -325,6 +325,33 @@
         <div class="modal__heading">Ваше сообщение отправлено</div>
         <div class="modal__msg">В ближайшее время с Вами <br> свяжется специалист</div>
     </div>
+    <div id="product_modal" class="modal">
+        <form class="form__wrap">
+            <div class="form__wrap__inner">
+                <div class="form__group is--w100">
+                    <input type="text" id="name" name="name" required data-parsley-no-focus>
+                    <label for="name">Имя</label>
+                    <span class="is--border"></span>
+                </div>
+                <div class="form__group is--w100">
+                    <input type="text" id="phone" name="phone" required data-parsley-no-focus data-parsley-length="[6, 11]" data-parsley-type="number">
+                    <label for="phone">Телефон</label>
+                    <span class="is--border"></span>
+                </div>
+                <div class="form__group is--w100 is--submit">
+                    <div class="form__group__submit">
+                        <div class="form__group__submit__btn">
+                            <input type="submit" class="btn" value="Отправить заявку">
+                        </div>
+                        <div class="form__group__submit__text">
+                            Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="simple.html">обработки персональных данных</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="product" id="productName">
+        </form>
+    </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>
     <script src="dist/js/bundle-min.js"></script>

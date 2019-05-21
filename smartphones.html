@@ -98,7 +98,10 @@
                     <div class="banner__inner__title">Ремонт смартфонов <br> в Орле</div>
                     <div class="banner__inner__desc">Наша компания не просто предлагает ремонт смартфонов, <br> но и гарантирует качество выполненных работ.</div>
                     <div class="banner__inner__btn">
+
+
                         <a href="#" class="btn">Заказать ремонт</a>
+
                     </div>
 
                 </div>
@@ -223,8 +226,8 @@
                         Приезжайте в наш центр, звоните или отправьте онлайн-заявку. <br> В любом случае вы получите профессиональное решение любой <br> проблемы при минимальных затратах времени и денежных средств.
                     </div>
                     <div class="pr__links">
-                        <a href="#" class="link">Вызвать мастера</a>
-                        <a href="#" class="link">Позвонить</a>
+                        <a href="#form_main" class="link anchor">Вызвать мастера</a>
+                        <a href="tel:84862490606" class="link">Позвонить</a>
                     </div>
                 </div>
             </div>
@@ -317,7 +320,7 @@
                 </div>
             </div>
         </div>
-        <div class="repair--price">
+        <div class="repair--price" id="price">
             <div class="repair--price__inner">
                 <table>
                     <thead>
@@ -732,6 +735,33 @@
     <div id="form_modal" class="modal">
         <div class="modal__heading">Ваше сообщение отправлено</div>
         <div class="modal__msg">В ближайшее время с Вами <br> свяжется специалист</div>
+    </div>
+    <div id="product_modal" class="modal">
+        <form class="form__wrap">
+            <div class="form__wrap__inner">
+                <div class="form__group is--w100">
+                    <input type="text" id="name" name="name" required data-parsley-no-focus>
+                    <label for="name">Имя</label>
+                    <span class="is--border"></span>
+                </div>
+                <div class="form__group is--w100">
+                    <input type="text" id="phone" name="phone" required data-parsley-no-focus data-parsley-length="[6, 11]" data-parsley-type="number">
+                    <label for="phone">Телефон</label>
+                    <span class="is--border"></span>
+                </div>
+                <div class="form__group is--w100 is--submit">
+                    <div class="form__group__submit">
+                        <div class="form__group__submit__btn">
+                            <input type="submit" class="btn" value="Отправить заявку">
+                        </div>
+                        <div class="form__group__submit__text">
+                            Нажимая на кнопку, Вы соглашаетесь с политикой <br><a href="simple.html">обработки персональных данных</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="product" id="productName">
+        </form>
     </div>
     <script src="dist/js/jquery-3.3.1.min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANLxdBSU8fJGR5IzCxzgTbVTdgOsJXcq4&callback=initMap"></script>

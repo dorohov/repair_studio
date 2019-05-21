@@ -24,6 +24,13 @@
             $('#form_modal').modal()            
         })
 
+        $('.catalog__card__link a').on('click', function(e) {
+            e.preventDefault()
+            var productName = $(this).data('product')
+            productName = productName.replace('<br>', '').replace(/\s+/g, ' ').trim()
+            $('.modal #productName').val(productName)
+            $('#product_modal').modal()     
+        })
 
     })
 })(jQuery);
