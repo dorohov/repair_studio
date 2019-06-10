@@ -113,6 +113,19 @@
         &__inner {
             @extend %container;
         }
+        &__st {
+            padding-top: 30px;
+            p {
+                margin-bottom: 0;
+                margin-top: 0;
+                color: #fff;
+                font-size: 14px;
+            }
+            display: none;
+            &.is--active {
+                display: block;
+            }
+        }
         table {
             box-sizing: border-box;
             border-collapse: collapse;
@@ -167,9 +180,17 @@
             &__label {
                 cursor: pointer;
                 color: $blue;
+                position: relative;
+                padding-right: 25px;
+                br {
+                    display: none !important;
+                }
                 &::after {
                     content: url(../../img/svg/blue_arrow_table.svg);
-                    margin-left: 10px;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    margin-top: -8px;
                 }
             }
             &__container {
@@ -188,7 +209,7 @@
                 ul {
                     padding: 10px 0;
                     li {
-                        span {
+                        a {
                             font-size: 18px;
                             line-height: 19px;
                             color: #fff;
@@ -196,6 +217,7 @@
                             display: block;
                             cursor: pointer;
                             padding: 5px 190px 5px 35px;
+                            text-decoration: none;
                             &:hover {
                                 color: $blue;
                             }
@@ -349,6 +371,7 @@
                 td {
                     padding-top: 0px !important;
                     padding-bottom: 20px !important;
+                    white-space: normal !important;
                 }
                 thead {
                     tr {
@@ -357,7 +380,8 @@
                             &:nth-child(3) {
                                 display: none;
                             }
-                            font-size: 18px;
+                            font-size: 14px;
+                            line-height: 18px;
                         }
                     }
                 }
@@ -391,8 +415,9 @@
                 &__container {
                     ul {
                         li {
-                            span {
-                                padding: 10px 100px 10px 35px;
+                            a {
+                                padding: 10px 30px 10px 35px;
+                                font-size: 14px;
                             }
                         }
                     }

@@ -7,12 +7,12 @@
                         <div class="repair--price__dropdown">
                                 Тип ремонта
                             <div class="repair--price__dropdown__block">
-                                <div class="repair--price__dropdown__label">iPhone X</div>
+                                <div class="repair--price__dropdown__label">@@title</div>
                                 <div class="repair--price__dropdown__container">
                                     <ul>
-                                        <li data-target="is-iphonex"><span>iPhone X</span></li>
-                                        <li data-target="is-iphone8"><span>iPhone 8</span></li>
-                                        <li data-target="is-samsung"><span>Samsung</span></li>
+                                        @@for(var i = 0; i < items.length; i++) {
+                                            <li data-target="is-`+items[i].id+`"><a href="#`+items[i].id+`" class="--repair-link">`+items[i].title+`</a></li>
+                                        }
                                     </ul>
                                 </div>
                             </div>
@@ -22,18 +22,19 @@
                     <th>Цена</th>
                 </tr>
             </thead>
-            @@include('repair.block.price.block.html', {
-                "id": "iphonex",
-                "active": "true"
-            })
-            @@include('repair.block.price.block.html', {
-                "id": "iphone8",
-                "active": "false"
-            })
-            @@include('repair.block.price.block.html', {
-                "id": "samsung",
-                "active": "false"
-            })
+            @@for(var i = 0; i < items.length; i++) {
+                @@include('repair.block.price.block.html', {
+                    "id": "`+items[i].id+`",
+                    "active": "`+items[i].active+`",
+                    "title": "`+items[i].title+`"
+                })
+            }
         </table>
+        @@for(var i = 0; i < items.length; i++) {
+            <div class="repair--price__st" data-target="#`+items[i].id+`">
+                <p>* — Что-то там</p>
+                <p>** — Еще что-то тамей</p>
+            </div>
+        }
     </div>
 </div>

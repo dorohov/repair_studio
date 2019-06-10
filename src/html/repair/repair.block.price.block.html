@@ -1,4 +1,4 @@
-<tbody id="is-@@id" class="__price-tab @@if(active == 'true') {is--active}">
+<tbody id="is-@@id" class="__price-tab @@if(active == 'true') {is--active}" data-title="@@title" data-target="#@@id">
     @@for(var i = 0; i < price.length; i++) {
         <tr data-title="`+price[i].name+`">
             <td>`+price[i].name+`</td>

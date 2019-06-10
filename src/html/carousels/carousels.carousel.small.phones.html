@@ -5,14 +5,14 @@
         </div>
         <div class="carousel__small__items">
             <div class="carousel__small__items__wrap">
-                    @@for(var i = 0; i < items.length; i++) {
-                        <div class="carousel__small__card">
-                            <a href="#" class="carousel__small__card__inner">
-                                <div class="carousel__small__card__img"><img src="img/`+items[i].img+`" alt=""></div>
-                                <div class="carousel__small__card__name">`+items[i].title+`</div>
-                            </a>
-                        </div>
-                    }
+                @@for(var i = 0; i < items.length; i++) {
+                    <div class="carousel__small__card">
+                        <a href="#`+items[i].id+`" class="carousel__small__card__inner --repair-link is--carousel">
+                            <div class="carousel__small__card__img"><img src="img/`+items[i].img+`" alt=""></div>
+                            <div class="carousel__small__card__name">`+items[i].title+`</div>
+                        </a>
+                    </div>
+                }
             </div>
             <div class="carousel__small__controls">
                 <button class="is--prev">@@include('../components/component.svg.html', {"name": "carousel_arrow"})</button>

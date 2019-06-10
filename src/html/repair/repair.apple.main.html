@@ -17,51 +17,63 @@
     "items": [
         {
             "title": "IPhone 4",
-            "img": "с_iphone4.png"
+            "img": "с_iphone4.png",
+            "id": "iphone4"
         },
         {
             "title": "IPhone 5",
-            "img": "с_iphone5.png"
+            "img": "с_iphone5.png",
+            "id": "iphone5"
         },
         {
             "title": "IPhone 6",
-            "img": "с_iphone6.png"
+            "img": "с_iphone6.png",
+            "id": "iphone6"
         },
         {
             "title": "IPhone 7",
-            "img": "с_iphone7.png"
+            "img": "с_iphone7.png",
+            "id": "iphone7"
         },
         {
             "title": "IPhone 8",
-            "img": "с_iphone8.png"
+            "img": "с_iphone8.png",
+            "id": "iphone8"
         },
         {
             "title": "IPhone X",
-            "img": "с_iphonex.png"
+            "img": "с_iphonex.png",
+            "id": "iphonex"
         },
         {
             "title": "IPhone 4",
-            "img": "с_iphone4.png"
+            "img": "с_iphone4.png",
+            "id": "iphone4"
         },
         {
             "title": "IPhone 5",
-            "img": "с_iphone5.png"
+            "img": "с_iphone5.png",
+            "id": "iphone5"
         },
         {
             "title": "IPhone 6",
-            "img": "с_iphone6.png"
+            "img": "с_iphone6.png",
+            "id": "iphone6"
         },
         {
             "title": "IPhone 7",
-            "img": "с_iphone7.png"
+            "img": "с_iphone7.png",
+            "id": "iphone7"
         },
         {
             "title": "IPhone 8",
-            "img": "с_iphone8.png"
+            "img": "с_iphone8.png",
+            "id": "iphone8"
         },
         {
             "title": "IPhone X",
-            "img": "с_iphonex.png"
+            "img": "с_iphonex.png",
+            "id": "iphonex"
         }
     ]
 })
@@ -78,7 +90,41 @@
     "btn": "Отправить"
 })
 @@include('repair.block.icons.html')
-@@include('repair.block.price.html')
+@@include('repair.block.price.html', {
+    "title": "iPhone X",
+    "items": [
+        {
+            "title": "IPhone 4",
+            "id": "iphone4",
+            "active": "true"
+        },
+        {
+            "title": "IPhone 5",
+            "id": "iphone5",
+            "active": "false"
+        },
+        {
+            "title": "IPhone 6",
+            "id": "iphone6",
+            "active": "false"
+        },
+        {
+            "title": "IPhone 7",
+            "id": "iphone7",
+            "active": "false"
+        },
+        {
+            "title": "IPhone 8",
+            "id": "iphone8",
+            "active": "false"
+        },
+        {
+            "title": "IPhone X",
+            "id": "iphonex",
+            "active": "false"
+        }
+    ]
+})
 @@include('../carousels/carousels.carousel.big.container.html', {
     "title": "Мы можем починить также",
     "link": "#",

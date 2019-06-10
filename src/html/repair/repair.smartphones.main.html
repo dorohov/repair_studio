@@ -17,51 +17,63 @@
     "items": [
         {
             "title": "Samsung",
-            "img": "с_samsung.png"
+            "img": "с_samsung.png",
+            "id": "samsung"
         },
         {
             "title": "Nokia",
-            "img": "с_nokia.png"
+            "img": "с_nokia.png",
+            "id": "nokia"
         },
         {
             "title": "Xiaomi",
-            "img": "с_xiaomi.png"
+            "img": "с_xiaomi.png",
+            "id": "xiaomi"
         },
         {
             "title": "HTC",
-            "img": "с_htc.png"
+            "img": "с_htc.png",
+            "id": "htc"
         },
         {
             "title": "Honor",
-            "img": "с_honor.png"
+            "img": "с_honor.png",
+            "id": "honor"
         },
         {
             "title": "Huawei",
-            "img": "с_huawei.png"
+            "img": "с_huawei.png",
+            "id": "huawei"
         },
         {
             "title": "Samsung",
-            "img": "с_samsung.png"
+            "img": "с_samsung.png",
+            "id": "samsung"
         },
         {
             "title": "Nokia",
-            "img": "с_nokia.png"
+            "img": "с_nokia.png",
+            "id": "nokia"
         },
         {
             "title": "Xiaomi",
-            "img": "с_xiaomi.png"
+            "img": "с_xiaomi.png",
+            "id": "xiaomi"
         },
         {
             "title": "HTC",
-            "img": "с_htc.png"
+            "img": "с_htc.png",
+            "id": "htc"
         },
         {
             "title": "Honor",
-            "img": "с_honor.png"
+            "img": "с_honor.png",
+            "id": "honor"
         },
         {
             "title": "Huawei",
-            "img": "с_huawei.png"
+            "img": "с_huawei.png",
+            "id": "huawei"
         }
     ]
 })
@@ -78,7 +90,41 @@
     "btn": "Отправить"
 })
 @@include('repair.block.icons.html')
-@@include('repair.block.price.html')
+@@include('repair.block.price.html', {
+    "title": "Samsung",
+    "items": [
+        {
+            "title": "Samsung",
+            "id": "samsung",
+            "active": "true"
+        },
+        {
+            "title": "Nokia",
+            "id": "nokia",
+            "active": "false"
+        },
+        {
+            "title": "Xiaomi",
+            "id": "xiaomi",
+            "active": "false"
+        },
+        {
+            "title": "HTC",
+            "id": "htc",
+            "active": "false"
+        },
+        {
+            "title": "Honor",
+            "id": "honor",
+            "active": "false"
+        },
+        {
+            "title": "Huawei",
+            "id": "huawei",
+            "active": "false"
+        }
+    ]
+})
 @@include('../carousels/carousels.carousel.big.container.html', {
     "title": "Мы можем починить также",
     "link": "#",
