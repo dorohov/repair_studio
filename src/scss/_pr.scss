@@ -73,7 +73,7 @@
                 align-items: flex-end;
             }
             &__right {
-                padding-bottom: 30px;
+                padding-bottom: 90px;
                 white-space: nowrap;
             }
             &__title {
@@ -318,6 +318,9 @@
                     a {
                         margin: 0 20px 15px 0;
                     }
+                }
+                &__right {
+                    padding-bottom: 0;
                 }
             }
         }
