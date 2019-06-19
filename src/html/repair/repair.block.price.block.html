@@ -1,4 +1,22 @@
 <tbody id="is-@@id" class="__price-tab @@if(active == 'true') {is--active}" data-title="@@title" data-target="#@@id">
+    <tr data-title="Пункт:">
+        <td>
+            Пункт
+            <div class="repair--price__quest">
+                <span>@@include('../components/component.svg.html', {"name": "question"})</span>
+                <div class="repair--price__quest__container">
+                    <div class="repair--price__quest__container__inner">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis laudantium maxime facere nemo iste! Unde velit magni cupiditate nulla suscipit?
+                    </div>
+                </div>
+            </div>
+        </td>
+        <td data-title="Время:">15 минут</td>
+        <td data-title="Цена:">
+            1490 ₽
+            <button class="__price-sale is--sale" data-text="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores temporibus eum, porro quis commodi, dolor, delectus maxime non nam perferendis laboriosam. Praesentium temporibus id aspernatur voluptatum ipsum, tempore culpa modi odio aperiam, dolorum atque, recusandae fugiat! Quo, excepturi alias ducimus blanditiis ipsam iste ullam harum. Est quaerat harum aliquam praesentium.">@@include('../components/component.svg.html', {"name": "sale"})</button>
+        </td>
+    </tr>
     @@for(var i = 0; i < price.length; i++) {
         <tr data-title="`+price[i].name+`">
             <td>`+price[i].name+`</td>

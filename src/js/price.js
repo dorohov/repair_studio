@@ -64,5 +64,23 @@
             if(targets.length <= 0) hideDropdown()
         })
 
+        $('.__price-sale').on('click', function() {
+            var dataContent = $(this).data('text')
+            $('.repair--price__sale p').html(dataContent)
+            $('html,body').animate({scrollTop: $('.repair--price__sale').offset().top - $('.navbar').innerHeight()},'slow');
+        })
+
+        $('.repair--price__quest').hover(function() {
+            $(this).children('.repair--price__quest__container').css({
+                "opacity": "1",
+                "visibility": "visible"
+            })
+        }, function() {
+            $(this).children('.repair--price__quest__container').css({
+                "opacity": "0",
+                "visibility": "hidden"
+            })
+        })
+
     })
 })(jQuery);
